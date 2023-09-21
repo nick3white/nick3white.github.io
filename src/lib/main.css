@@ -1,0 +1,81 @@
+html {
+	--bg-color-1: 48, 48, 48;
+	--fg-color-1: 204, 204, 204;
+}
+html,
+body {
+	/* height: 100%; */
+	/* width: 100%; */
+	box-sizing: border-box;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: rgb(var(--bg-color-1));
+	color: rgb(var(--fg-color-1));
+}
+body * {
+	box-sizing: border-box;
+}
+@font-face {
+	font-family: 'flecha';
+	src: url('/fonts/FlechaM-Regular.woff');
+}
+@font-face {
+	font-family: 'styrene';
+	src: url('/fonts/StyreneB-Regular-Web.woff');
+}
+@font-face {
+	font-family: 'styrene-bold';
+	src: url('/fonts/StyreneB-Bold-Web.woff');
+}
+@font-face {
+	font-family: 'signifier';
+	src: url('/fonts/signifier-regular.woff2');
+}
+@font-face {
+	font-family: 'signifier-bold';
+	src: url('/fonts/signifier-bold.woff2');
+}
+
+h1,
+h2 {
+	font-family: 'flecha';
+	color: rgb(var(--brand));
+}
+h3,
+h4,
+h5,
+h6,
+dt {
+	font-family: 'styrene';
+	color: rgb(var(--brand));
+}
+
+body,
+html {
+	font-family: 'signifier';
+}
+
+b {
+	font-family: 'styrene-bold';
+}
+
+.llines {
+	color: inherit !important;
+	font-weight: 700;
+	line-height: 1rem;
+	text-decoration: none;
+	background: linear-gradient(to right, rgba(var(--fg-color-1), 0.3), rgba(var(--fg-color-1), 0.3)),
+		linear-gradient(to right, rgba(var(--fg-color-1), 1), rgba(var(--fg-color-1), 1));
+	background-size: 100% 0.1rem, 0 0.1rem;
+	background-position: 100% 100%, 0 100%;
+	background-repeat: no-repeat;
+	transition: background-size 300ms;
+}
+
+.llines:hover,
+.llines:focus {
+	background-size: 0 0.1rem, 100% 0.1rem;
+}
