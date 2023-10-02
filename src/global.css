@@ -1,0 +1,69 @@
+/**
+ * PandaCSS CSS layers
+ * View the full documentation at https://panda-css.com/docs/concepts/cascade-layers#layer-css
+ */
+@layer reset, base, tokens, recipes, utilities;
+
+/**
+ * WHAT IS THIS FILE?
+ *
+ * Globally applied styles. No matter which components are in the page or matching route,
+ * the styles in here will be applied to the Document, without any sort of CSS scoping.
+ *
+ */
+html {
+    -webkit-text-size-adjust: 100%;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    font-family:
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        "Helvetica Neue",
+        Arial,
+        "Noto Sans",
+        sans-serif,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        "Noto Color Emoji";
+    --fg-1: 218, 218, 218;
+    --bg-1: 37, 37, 37;
+}
+
+body {
+    padding: 0;
+    line-height: inherit;
+}
+
+.llines {
+    color: rgb(var(--fg-1)) !important;
+    font-weight: 700;
+    line-height: 1rem;
+    text-decoration: none;
+    background: linear-gradient(
+            to right,
+            rgba(var(--fg-1), 0.3),
+            rgba(var(--fg-1), 0.3)
+        ),
+        linear-gradient(to right, rgba(var(--fg-1), 1), rgba(var(--fg-1), 1));
+    background-size:
+        100% 0.1rem,
+        0 0.1rem;
+    background-position:
+        100% 100%,
+        0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 300ms;
+}
+
+.llines:hover,
+.llines:focus {
+    background-size:
+        0 0.1rem,
+        100% 0.1rem;
+}
