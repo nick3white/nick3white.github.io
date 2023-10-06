@@ -1,8 +1,13 @@
 {
   "name": "my-qwik-empty-starter",
+  "trustedDependencies": [
+    "sharp"
+  ],
   "devDependencies": {
     "@builder.io/qwik": "^1.2.13",
     "@builder.io/qwik-city": "^1.2.13",
+    "@builder.io/vite-plugin-macro": "~0.0.7",
+    "@pandacss/dev": "^0.14.0",
     "@types/eslint": "8.44.1",
     "@types/node": "^20.4.5",
     "@typescript-eslint/eslint-plugin": "6.2.0",
@@ -31,11 +36,9 @@
     "fmt": "prettier --write .",
     "fmt.check": "prettier --check .",
     "lint": "eslint \"src/**/*.ts*\"",
+    "prebuild.pandacss": "panda codegen --silent",
     "preview": "qwik build preview && vite preview --open",
     "start": "vite --open --mode ssr",
     "qwik": "qwik"
-  },
-  "trustedDependencies": [
-    "sharp"
-  ]
+  }
 }
