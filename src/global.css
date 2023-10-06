@@ -77,12 +77,6 @@ h1 {
   background-repeat: no-repeat;
   background-position: left top;
 }
-main {
-  display: flex;
-}
-.sidebar {
-  flex: 1;
-}
 article {
   flex: 4;
 }
