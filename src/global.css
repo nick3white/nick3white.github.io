@@ -11,16 +11,32 @@
  * the styles in here will be applied to the Document, without any sort of CSS scoping.
  *
  */
-html {
+html .dark {
     --fg-color-1: 218, 218, 218;
     --bg-color-1: 37, 37, 37;
     --bg-color-2: 0, 3, 50;
-    font-family: "noto sans mono", monospace;
 }
-body .dark {
+/* html .light { */
+html {
+    --fg-color-1: 37, 37, 37;
+    --bg-color-1: 218, 218, 218;
+    --bg-color-2: 255, 252, 205;
+}
+html .synth {
+    /* html { */
+    --fg-color-1: 255, 194, 253;
+    --bg-color-1: 21, 2, 32;
+    --fg-color-2: 22, 182, 212;
+    --bg-color-2: 22, 182, 212;
+}
+html .vapor {
+    --fg-color-1: 218, 218, 218;
+    --bg-color-1: 37, 37, 37;
+    --bg-color-2: 0, 3, 50;
 }
 
 body {
+    font-family: "noto sans mono", monospace;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -51,7 +67,8 @@ a {
         100% 100%,
         0 100%;
     background-repeat: no-repeat;
-    transition: background-size 300ms;
+    transition: 300ms;
+    /* transition: background-size 300ms; */
 }
 
 a:hover,
@@ -96,6 +113,9 @@ address {
     flex-direction: column;
     justify-content: flex-end;
     text-align: right;
+}
+.lists h3 {
+    margin-top: 24px;
 }
 .resume-content section {
     padding: 32px;
