@@ -143,8 +143,10 @@ export default component$(() => {
                         listStyleType: "none",
                     },
                     "& li": {
-                        marginBlock: "4px",
-                        borderLeft: "var(--border)",
+                        marginBlock: "8px",
+                        // borderLeft: "3px solid rgba(var(--splash),0.33)",
+                        // borderBottom: "1px solid rgba(var(--splash),0.33)",
+                        border: "1px solid rgba(var(--splash),0.33)",
                     },
                 })}
             >
