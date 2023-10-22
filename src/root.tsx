@@ -25,7 +25,7 @@ export default component$(() => {
                     dangerouslySetInnerHTML={`
                         (function() {
                             function setTheme(theme) {
-                                document.documentElement.className = theme;
+                                document.documentElement.className = theme
                                 localStorage.setItem('theme', theme);
                             }
 
@@ -48,6 +48,8 @@ setTheme('light')
                                 activeButton.classList.remove('invisible');
 
                             } else {
+                                document.documentElement.className = 'light'
+                                localStorage.setItem('theme', 'light');
                                 const themeButtonContainer = document.getElementById('theme-button-container')
                                 const themeButtons = themeButtonContainer.querySelectorAll('#theme-button-container > button');
                                 
