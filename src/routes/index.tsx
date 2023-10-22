@@ -67,7 +67,7 @@ export default component$(() => {
                         left: "4px",
                         padding: "8px",
                         width: "100%",
-                        background: "var(--bg-color-1)",
+                        background: "rgb(var(--bg-1))",
                         border: "1px solid rgba(var(--fg-1), 0.5)",
                         zIndex: 100,
                         transition: "250ms",
