@@ -19,20 +19,19 @@ const skills: [string, string[]][] = [
 
 type WorkSample = [string, string, JSXNode];
 
-const samples: WorkSample[] = [
-    [
-        "Halloween",
-        "https://digital.newberry.org/collection-stories/halloween",
-        <Halloween />,
-    ],
-    ["Race B4 Race", "https://digital.newberry.org/rb4r", <RaceBeforeRace />],
-    [
-        "Mapping Movement",
-        "https://mappingmovement.newberry.org/",
-        <MappingMovement />,
-    ],
-];
 export default component$(() => {
+    const mapmov = <MappingMovement />;
+    const hallo = <Halloween />;
+    const rb4r = <RaceBeforeRace />;
+    const samples: WorkSample[] = [
+        [
+            "Halloween",
+            "https://digital.newberry.org/collection-stories/halloween",
+            hallo,
+        ],
+        ["Race B4 Race", "https://digital.newberry.org/rb4r", rb4r],
+        ["Mapping Movement", "https://mappingmovement.newberry.org/", mapmov],
+    ];
     return (
         <main
             id="top"

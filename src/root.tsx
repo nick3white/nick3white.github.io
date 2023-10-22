@@ -41,6 +41,7 @@ setTheme('light')
 
                         window.addEventListener('load', function() {
 
+                            console.log("top of load function")
                             if (localStorage.getItem('theme')){
                                 const btnId = 'theme-btn-' + localStorage.getItem('theme')
                                 let activeButton = document.getElementById(btnId) 
