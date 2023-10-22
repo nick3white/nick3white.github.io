@@ -1,0 +1,1 @@
+import{k as s,h as a,_ as o}from"./q-7bb323a3.js";const c=["light","dark","synth"];function r(e,t){t.value=e,document.documentElement.className=e,localStorage.setItem("theme",e)}const _=s(a(()=>o(()=>import("./q-8681adb4.js"),["build/q-8681adb4.js","build/q-7bb323a3.js","build/q-e2e295ef.js"]),"s_cLxhDSZvvW8"));export{_ as T,r as a,c as t};

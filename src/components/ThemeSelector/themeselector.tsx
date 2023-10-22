@@ -11,7 +11,7 @@ function themeswap(theme: string, themeStore: Signal<string>) {
 }
 
 export const ThemeSelector = component$(() => {
-    const themeStore = useSignal("light");
+    const themeStore = useSignal("");
     return (
         <div
             id="theme-button-container"

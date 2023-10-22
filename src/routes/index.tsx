@@ -138,8 +138,13 @@ export default component$(() => {
             <article
                 class={css({
                     "& ul, li, h2, h3": {
-                        paddingInline: "64px",
+                        marginInline: "32px",
+                        paddingInline: "32px",
                         listStyleType: "none",
+                    },
+                    "& li": {
+                        marginBlock: "4px",
+                        borderLeft: "var(--border)",
                     },
                 })}
             >

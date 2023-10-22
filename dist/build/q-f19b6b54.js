@@ -1,4 +1,4 @@
-import{Q as n,E as l,S as o}from"./q-db59ef93.js";import{k as s,h as m,_ as a,j as t,S as e}from"./q-7bb323a3.js";const i=s(m(()=>a(()=>import("./q-e6cc6d81.js"),["build/q-e6cc6d81.js","build/q-7bb323a3.js","build/q-db59ef93.js"]),"s_0vphQYqOdZI")),c=()=>t(n,{children:[e("head",null,null,[e("meta",null,{charSet:"utf-8"},null,3,null),e("link",null,{href:"/manifest.json",rel:"manifest"},null,3,null),e("script",null,{dangerouslySetInnerHTML:`
+import{Q as n,E as l,S as o}from"./q-b0632757.js";import{k as s,h as m,_ as a,j as t,S as e}from"./q-7bb323a3.js";const i=s(m(()=>a(()=>import("./q-6fc77a6b.js"),["build/q-6fc77a6b.js","build/q-7bb323a3.js","build/q-b0632757.js"]),"s_0vphQYqOdZI")),c=()=>t(n,{children:[e("head",null,null,[e("meta",null,{charSet:"utf-8"},null,3,null),e("link",null,{href:"/manifest.json",rel:"manifest"},null,3,null),e("script",null,{dangerouslySetInnerHTML:`
                         (function() {
                             function setTheme(theme) {
                                 document.documentElement.className = theme
@@ -6,18 +6,16 @@ import{Q as n,E as l,S as o}from"./q-db59ef93.js";import{k as s,h as m,_ as a,j 
                             }
 
                             var theme = localStorage.getItem('theme');
-                            console.log(theme);
 
                             if (theme) {
                                 setTheme(theme);
                             } else {
-setTheme('light')
-}
+                                setTheme('light')
+                            }
                         })();
 
                         window.addEventListener('load', function() {
 
-                            console.log("top of load function")
                             if (localStorage.getItem('theme')){
                                 const btnId = 'theme-btn-' + localStorage.getItem('theme')
                                 let activeButton = document.getElementById(btnId) 
@@ -25,7 +23,6 @@ setTheme('light')
                                 activeButton.classList.remove('invisible');
 
                             } else {
-                            console.log("manually adding light")
                                 document.documentElement.className = 'light'
                                 localStorage.setItem('theme', 'light');
                                 const themeButtonContainer = document.getElementById('theme-button-container')

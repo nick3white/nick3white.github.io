@@ -30,18 +30,16 @@ export default component$(() => {
                             }
 
                             var theme = localStorage.getItem('theme');
-                            console.log(theme);
 
                             if (theme) {
                                 setTheme(theme);
                             } else {
-setTheme('light')
-}
+                                setTheme('light')
+                            }
                         })();
 
                         window.addEventListener('load', function() {
 
-                            console.log("top of load function")
                             if (localStorage.getItem('theme')){
                                 const btnId = 'theme-btn-' + localStorage.getItem('theme')
                                 let activeButton = document.getElementById(btnId) 
@@ -49,7 +47,6 @@ setTheme('light')
                                 activeButton.classList.remove('invisible');
 
                             } else {
-                            console.log("manually adding light")
                                 document.documentElement.className = 'light'
                                 localStorage.setItem('theme', 'light');
                                 const themeButtonContainer = document.getElementById('theme-button-container')
