@@ -92,13 +92,13 @@ body {
     --fg-color-1: rgb(var(--fg-1));
     --bg-1: 187, 237, 205;
     --bg-color-1: radial-gradient(
-            18% 28% at 24% 50%,
-            rgba(var(--1), 1) 7%,
+            87% 28% at 24% 0%,
+            rgba(var(--1), 1) 1%,
             #00000000 100%
         ),
         radial-gradient(
             70% 53% at 36% 76%,
-            rgba(var(--splash), 1) 0,
+            rgba(var(--splash), 1) 70%,
             #00000000 100%
         ),
         radial-gradient(
