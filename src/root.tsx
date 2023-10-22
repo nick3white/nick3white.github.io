@@ -1,4 +1,4 @@
-import { component$ } from "@builder.io/qwik";
+import { component$, useSignal } from "@builder.io/qwik";
 import {
   QwikCityProvider,
   RouterOutlet,
@@ -21,6 +21,42 @@ export default component$(() => {
       <head>
         <meta charSet="utf-8" />
         <link rel="manifest" href="/manifest.json" />
+        <script
+          dangerouslySetInnerHTML={`
+                        (function() {
+                            function setTheme(theme) {
+                                document.documentElement.className = theme;
+                                localStorage.setItem('theme', theme);
+                            }
+
+                            var theme = localStorage.getItem('theme');
+                            console.log(theme);
+
+                            if (theme) {
+                                setTheme(theme);
+                            }
+                        })();
+
+                        window.addEventListener('load', function() {
+
+                            if (localStorage.getItem('theme')){
+                                const btnId = 'theme-btn-' + localStorage.getItem('theme')
+                                let activeButton = document.getElementById(btnId) 
+                                activeButton.classList.add("visible");
+                                activeButton.classList.remove('invisible');
+
+                            } else {
+                                const themeButtonContainer = document.getElementById('theme-button-container')
+                                const themeButtons = themeButtonContainer.querySelectorAll('#theme-button-container > button');
+                                
+                                for (let themeButton of themeButtons) {
+                                    themeButton.classList.add('visible');
+                                    themeButton.classList.remove('invisible');
+                                }
+                            }
+                        });
+                    `}
+        ></script>
         <RouterHead />
       </head>
       <body lang="en">

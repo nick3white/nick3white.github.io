@@ -11,198 +11,165 @@
  * the styles in here will be applied to the Document, without any sort of CSS scoping.
  *
  */
-html .dark {
-    --fg-color-1: 218, 218, 218;
-    --bg-color-1: 37, 37, 37;
-    --bg-color-2: 0, 3, 50;
-}
-/* html .light { */
 html {
-    --fg-color-1: 37, 37, 37;
-    --bg-color-1: 218, 218, 218;
-    --bg-color-2: 255, 252, 205;
+  -webkit-text-size-adjust: 100%;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    "Noto Sans",
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji";
 }
-html .synth {
-    /* html { */
-    --fg-color-1: 255, 194, 253;
-    --bg-color-1: 21, 2, 32;
-    --fg-color-2: 22, 182, 212;
-    --bg-color-2: 22, 182, 212;
-}
-html .vapor {
-    --fg-color-1: 218, 218, 218;
-    --bg-color-1: 37, 37, 37;
-    --bg-color-2: 0, 3, 50;
+*,
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth !important;
 }
 
 body {
-    font-family: "noto sans mono", monospace;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    line-height: inherit;
-    background: rgba(var(--bg-color-1), 1);
-    color: rgba(var(--fg-color-1), 1);
+  font-family: "noto sans mono", monospace;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: var(--fg-color-1);
+  background: var(--bg-color-1);
+}
+.light,
+#theme-btn-light {
+  --1: 193, 223, 192;
+  --splash: 120, 162, 137; /* splash is the same as #2 */
+  --splash-color: rgb(120, 162, 137);
+  --3: 187, 237, 205;
+  --4: 128, 160, 120;
+  --fg-1: 44, 48, 6;
+  --fg-color-1: rgb(var(--fg-1));
+  --bg-1: 187, 237, 205;
+  --bg-color-1: radial-gradient(
+      18% 28% at 24% 50%,
+      rgba(var(--1), 1) 7%,
+      #00000000 100%
+    ),
+    radial-gradient(
+      70% 53% at 36% 76%,
+      rgba(var(--splash), 1) 0,
+      #00000000 100%
+    ),
+    radial-gradient(21% 37% at 72% 23%, rgba(var(--3), 1) 24%, #00000000 100%),
+    radial-gradient(35% 56% at 91% 74%, rgba(var(--4), 1) 9%, #00000000 100%);
+
+  --text-shadow: none;
+  --border: 3px solid rgb(var(--fg-1));
+  --shadow: 0px 0px 10px 5px rgba(var(--fg-1), 0.2);
+  --shadow-soft: 0px 0px 10px 5px rgba(var(--fg-1), 0.1);
+  --border-radius: 0;
 }
 
-a {
-    color: inherit !important;
-    font-weight: 700;
-    line-height: 1rem;
-    text-decoration: none;
-    background: linear-gradient(
-            to right,
-            rgba(var(--fg-color-1), 0.3),
-            rgba(var(--fg-color-1), 0.3)
-        ),
-        linear-gradient(
-            to right,
-            rgba(var(--fg-color-1), 1),
-            rgba(var(--fg-color-1), 1)
-        );
-    background-size:
-        100% 0.1rem,
-        0 0.1rem;
-    background-position:
-        100% 100%,
-        0 100%;
-    background-repeat: no-repeat;
-    transition: 300ms;
-    /* transition: background-size 300ms; */
+.dark,
+#theme-btn-dark {
+  --fg-1: 204, 204, 204;
+  --fg-color-1: rgb(var(--fg-1));
+  --bg-1: 51, 51, 51;
+  --bg-color-1: rgb(var(--bg-1));
+  --splash: 168, 220, 217;
+  --splash-color: rgb(var(--splash));
+
+  --text-shadow: none;
+  --border: 3px solid rgb(var(--fg-1));
+  --shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+  --shadow-soft: 0px 0px 5px 5px rgba(0, 0, 0, 0.33);
+  --border-radius: 0;
 }
 
-a:hover,
-a:focus {
-    background-size:
-        0 0.1rem,
-        100% 0.1rem;
-}
-ul {
-    list-style-type: none;
-}
-li {
-    line-height: 1.75rem;
-    border-bottom: 1px solid rgba(218, 218, 218, 0.3);
-    padding-bottom: 8px;
-    margin-bottom: 8px;
-}
-h1 {
-    padding-inline: 32px;
-    height: 327px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    /* background-size: contain; */
-}
-article {
-    flex: 4;
-}
-header,
-h1 {
-    /* height: 260px; */
-    height: auto;
-}
-h1 {
-    font-size: min(10vh, 13vw);
-    line-height: min(10vh, 13vw);
-    margin: 0;
-}
-address {
-    padding-inline: 32px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    text-align: right;
-}
-.lists h3 {
-    margin-top: 24px;
-}
-.resume-content section {
-    padding: 32px;
-}
-.resume-content h2 {
-    font-size: 2rem;
-    border-bottom: 1px solid rgba(218, 218, 218, 0.5);
-}
-.resume-content h3 {
-    font-size: 1.33rem;
-    border-bottom: 1px solid rgba(218, 218, 218, 0.3);
-}
-.resume-content em {
-    font-style: italic;
-    border-bottom: 1px solid rgba(218, 218, 218, 0.2);
-}
-/* li span { */
-/*     padding-inline: 4px; */
-/*     border-right: 1px solid rgb(var(--fg-color-1)); */
-/*     margin: 1px; */
-/* } */
-/* li span:last-of-type { */
-/*     border-right: 0; */
-/* } */
-.sidebar {
-    position: sticky;
-    top: 16px;
-}
-.samples img {
-    width: 360px;
-    height: 252px;
-}
-.list-title {
-    /* margin-left: 40px; */
-    font-size: 1.33rem;
-    font-weight: bold;
-    border-bottom: 1px solid rgba(var(--fg-color-1), 1);
-}
-dt {
-    font-size: 1.17rem;
-    line-height: 1.17rem;
-    margin-top: 16px;
-    /* font-weight: bold; */
-}
-.skill-wrap {
-    position: relative;
-}
-.skill-liner {
-    top: 100%;
-    width: 100%;
-    left: 16px;
+.synth,
+#theme-btn-synth {
+  --fg-1: 255, 194, 253;
+  --fg-color-1: rgb(var(--fg-1));
+  --bg-1: 21, 2, 32;
+  --bg-color-1: rgb(var(--bg-1));
+  --splash: 22, 182, 212;
+  --splash-color: rgb(var(--splash));
+
+  --text-shadow: 0 0 10px #f205ae, 0 0 20px #f205ae, 0 0 40px #f205ae,
+    0 0 80px #f205ae, 0 0 160px #f205ae, 0 0 320px #f205ae, 0 0 640px #f205ae;
+  --border: 3px solid rgba(22, 182, 212, 1);
+  --shadow: inset 0 0 10px rgba(113, 213, 255, 0.5),
+    inset 0 0 20px rgba(113, 213, 255, 0.5), 0 0 10px rgba(113, 213, 255, 0.3),
+    0 0 20px rgba(113, 213, 255, 0.3), 0 0 40px rgba(113, 213, 255, 0.3),
+    0 0 80px rgba(113, 213, 255, 0.3), 0 0 160px rgba(113, 213, 255, 0.3),
+    0 0 320px rgba(113, 213, 255, 0.3);
+  --shadow-soft: 0 0 20px rgba(113, 213, 255, 0.3);
+  --border-radius: 15px;
 }
 
-.tooltip {
-    top: 110%;
-    right: 0;
-    width: 250px;
+.vapor,
+#theme-btn-vapor {
+  --fg-1: 96, 67, 95;
+  --fg-color-1: rgb(var(--fg-1));
+  --bg-1: 170, 231, 232;
+  --bg-color-1: linear-gradient(
+    125deg,
+    rgba(var(--bg-1), 1) 0%,
+    rgba(255, 224, 241, 1) 100%
+  );
+  --splash: 21, 2, 32;
+  --splash-color: linear-gradient(45deg, #8fa4e0, #798abc);
+
+  --text-shadow: none;
+  --border: 3px solid rgba(22, 182, 212, 1);
+  --shadow: 24px -24px 48px #7282b2, -24px 24px 48px #9ab0f0;
+  --shadow-soft: 24px 24px 48px #7282b2;
+  /* --border-radius: 50px; */
 }
-.skill-liner,
-.tooltip {
-    display: none;
-    position: absolute;
-    background: rgba(var(--bg-color-1), 0.87);
-    border: 1px solid rgba(var(--fg-color-1), 1);
-    z-index: 10;
-    padding: 8px;
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+.macos,
+#theme-btn-macos {
+  --fg-1: 96, 67, 95;
+  --fg-color-1: rgb(var(--fg-1));
+  --bg-1: 170, 231, 232;
+  --bg-color-1: linear-gradient(
+    125deg,
+    rgba(var(--bg-1), 1) 0%,
+    rgba(255, 224, 241, 1) 100%
+  );
+  --splash: 21, 2, 32;
+  --splash-color: linear-gradient(45deg, #8fa4e0, #798abc);
+
+  --text-shadow: none;
+  --border: 3px solid rgba(22, 182, 212, 1);
+  --shadow: 24px -24px 48px #7282b2, -24px 24px 48px #9ab0f0;
+  --shadow-soft: 24px 24px 48px #7282b2;
+  /* --border-radius: 50px; */
 }
-.skill-wrap:hover .skill-liner {
-    display: block;
+.theme-btn {
+  color: var(--fg-color-1);
+  background: rgb(var(--bg-1));
+  /* border: var(--border); */
+  /* box-shadow: var(--shadow); */
+  /* border-radius: var(--border-radius); */
 }
-.sample-list dt {
-    padding: 8px 4px 4px 4px;
-    margin-top: 8px;
-    border-top: 1px solid rgba(var(--fg-color-1), 0.33);
-    border-left: 1px solid rgba(var(--fg-color-1), 0.33);
-    border-right: 1px solid rgba(var(--fg-color-1), 0.33);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-shadow: var(--text-shadow);
 }
-.sample-list dd {
-    padding: 4px;
-    border-bottom: 1px solid rgba(var(--fg-color-1), 0.33);
-    border-left: 1px solid rgba(var(--fg-color-1), 0.33);
-    border-right: 1px solid rgba(var(--fg-color-1), 0.33);
+h2 {
+  font-size: 44px;
 }
-.chicago {
-    position: relative;
-}
-.chicago:hover .tooltip {
-    display: block;
+h3 {
+  font-size: 33px;
 }
