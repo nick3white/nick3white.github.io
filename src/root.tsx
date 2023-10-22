@@ -34,7 +34,9 @@ export default component$(() => {
 
                             if (theme) {
                                 setTheme(theme);
-                            }
+                            } else {
+setTheme('light')
+}
                         })();
 
                         window.addEventListener('load', function() {
