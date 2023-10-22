@@ -48,6 +48,7 @@ setTheme('light')
                                 activeButton.classList.remove('invisible');
 
                             } else {
+                            console.log("manually adding light")
                                 document.documentElement.className = 'light'
                                 localStorage.setItem('theme', 'light');
                                 const themeButtonContainer = document.getElementById('theme-button-container')
