@@ -16,6 +16,7 @@ export const ThemeSelector = component$(() => {
         <div
             id="theme-button-container"
             class={css({
+                zIndex: 9001,
                 display: "flex",
                 flexDirection: "column",
                 width: "50px",
