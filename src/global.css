@@ -85,7 +85,8 @@ body {
 #theme-btn-light {
     --1: 193, 223, 192;
     --splash: 120, 162, 137; /* splash is the same as #2 */
-    --splash-color: rgb(120, 162, 137);
+    --splash-color: rgb(var(--splash));
+    --splash-color-alt: rgb(70, 112, 87);
     --3: 187, 237, 205;
     --4: 128, 160, 120;
     --fg-1: 44, 48, 6;
@@ -116,8 +117,9 @@ body {
     --text-shadow: none;
     --border: 3px solid rgb(var(--fg-1));
     --shadow: 0px 0px 10px 5px rgba(var(--fg-1), 0.2);
-    --shadow-soft: 0px 0px 10px 5px rgba(var(--fg-1), 0.1);
+    --shadow-soft: 0px 20px 10px -5px rgba(var(--fg-1), 0.2);
     --border-radius: 0;
+    --text-underline: 1px solid rgb(var(--splash));
 }
 
 .dark,
@@ -128,12 +130,14 @@ body {
     --bg-color-1: rgb(var(--bg-1));
     --splash: 168, 220, 217;
     --splash-color: rgb(var(--splash));
+    --splash-color-alt: rgb(var(--splash));
 
     --text-shadow: none;
     --border: 3px solid rgb(var(--fg-1));
     --shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
-    --shadow-soft: 0px 0px 5px 5px rgba(0, 0, 0, 0.33);
+    --shadow-soft: 0px 20px 10px -5px rgba(0, 0, 0, 0.33);
     --border-radius: 0;
+    --text-underline: 1px solid rgb(var(--splash));
 }
 
 .synth,
@@ -144,18 +148,31 @@ body {
     --bg-color-1: rgb(var(--bg-1));
     --splash: 22, 182, 212;
     --splash-color: rgb(var(--splash));
+    --splash-color-alt: rgb(var(--splash));
 
     --text-shadow: 0 0 10px #f205ae, 0 0 20px #f205ae, 0 0 40px #f205ae,
         0 0 80px #f205ae, 0 0 160px #f205ae, 0 0 320px #f205ae,
         0 0 640px #f205ae;
+    --text-shadow-soft: 0 0 10px #f205aeaa, 0 0 20px #f205aeaa,
+        0 0 40px #f205aeaa, 0 0 80px #f205aeaa, 0 0 160px #f205aeaa,
+        0 0 320px #f205aeaa, 0 0 640px #f205aeaa;
+    --text-shadow-alt: 0 0 10px rgb(var(--splash)), 0 0 20px rgb(var(--splash)),
+        0 0 40px rgb(var(--splash)), 0 0 80px rgb(var(--splash)),
+        0 0 160px rgb(var(--splash)), 0 0 320px rgb(var(--splash)),
+        0 0 640px rgb(var(--splash));
+    --text-shadow-alt-soft: 0 0 10px rgba(var(--splash), 0.4),
+        0 0 20px rgba(var(--splash), 0.4), 0 0 40px rgba(var(--splash), 0.4),
+        0 0 80px rgba(var(--splash), 0.4), 0 0 160px rgba(var(--splash), 0.4),
+        0 0 320px rgba(var(--splash), 0.4), 0 0 640px rgba(var(--splash), 0.4);
     --border: 3px solid rgba(22, 182, 212, 1);
     --shadow: inset 0 0 10px rgba(113, 213, 255, 0.5),
         inset 0 0 20px rgba(113, 213, 255, 0.5),
         0 0 10px rgba(113, 213, 255, 0.3), 0 0 20px rgba(113, 213, 255, 0.3),
         0 0 40px rgba(113, 213, 255, 0.3), 0 0 80px rgba(113, 213, 255, 0.3),
         0 0 160px rgba(113, 213, 255, 0.3), 0 0 320px rgba(113, 213, 255, 0.3);
-    --shadow-soft: 0 0 20px rgba(113, 213, 255, 0.3);
+    --shadow-soft: 0 20px 20px -5px rgba(113, 213, 255, 0.3);
     --border-radius: 15px;
+    --text-underline: 1px solid rgba(0, 0, 0, 0);
 }
 
 .vapor,

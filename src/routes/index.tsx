@@ -14,7 +14,39 @@ const skills: [string, string[]][] = [
     ],
     ["Database", ["MySQL", "PostgreSQL", "Prisma", "Redis"]],
 ];
-
+const pubs = [
+    [
+        "The Collective Wisdom Handbook",
+        "Book",
+        "Covers the history, practice, best practices, and technology available to support, crowdsourcing transcriptions in cultural heritage institutions.  Written by me and 20 of my closest friends.",
+    ],
+    [
+        "IIIF and the Problem with CSS Image Cropping",
+        "Article",
+        "Explains the challenges of CSS image handling and how to use IIIF to solve them.",
+        "https://medium.com/@digitalnewberry/iiif-and-the-problem-with-css-image-cropping-651cfeb5593b",
+    ],
+    [
+        "FOSS: What and Why",
+        "Job Talk",
+        "Overview of what FOSS means, what open source is, and their value, both ethically and practically",
+    ],
+    [
+        "Digitial Initiatives Career Talk",
+        "Job Talk",
+        "Presented to a number of college classes, a summary of what we do and how we do it.",
+    ],
+    [
+        "From Socrates to Stack Exchance",
+        "Job Talk",
+        "Covering the general applications and use cases of various languages, covering Bash (and Linux generally), Python, and JavaScript",
+    ],
+    [
+        "The Time Machine",
+        "Conference Paper, Code4Lib Chicago, 2019",
+        "Covers technology used for the Time Machine project, from crowdsourcing transcription, to Gatsby & the importance of SSG to libraries",
+    ],
+];
 type WorkSample = [string, string, JSXNode];
 
 export default component$(() => {
@@ -102,6 +134,38 @@ export default component$(() => {
                 },
                 "& .me": {
                     width: "100%",
+                },
+                "& article h2": {
+                    borderBottom: "var(--border)",
+                    boxShadow: "var(--shadow-soft)",
+                },
+                "& dt, dd": {
+                    marginInline: "32px",
+                    paddingInline: "32px",
+                },
+                "& dt": {
+                    textShadow: "var(--text-shadow-soft)",
+                    borderBottom: "2px solid rgba(var(--fg-1), 0.5)",
+                    fontWeight: "bold",
+                    fontSize: "1.25rem",
+                    marginBlock: "3px",
+                },
+                "& dd": {
+                    border: "1px solid rgba(var(--splash),0.33)",
+                    "& em": {
+                        paddingRight: "11px",
+                        fontStyle: "italic",
+                        fontSize: "1.1rem",
+                    },
+                    "& a": {
+                        color: "var(--splash-color-alt)",
+                        textShadow: "var(--text-shadow-alt-soft)",
+                        transition: "200ms",
+                        borderBottom: "var(--text-underline)",
+                        "&:hover": {
+                            textShadow: "var(--text-shadow-alt)",
+                        },
+                    },
                 },
             })}
         >
@@ -300,6 +364,33 @@ export default component$(() => {
                         thousands of employees, as well as with companies small
                         scale companies (which were usually more fun!)
                     </li>
+                </section>
+                <section>
+                    <h2>Publications (&amp;c)</h2>
+                    <dl>
+                        {pubs.map((p) => (
+                            <>
+                                <dt>{p[0]}</dt>
+                                <dd>
+                                    <em>
+                                        {p[3] ? (
+                                            <a
+                                                href={p[3]}
+                                                target="_blank"
+                                                class="art-link"
+                                            >
+                                                {p[1]}
+                                            </a>
+                                        ) : (
+                                            p[1]
+                                        )}
+                                        .
+                                    </em>
+                                    {p[2]}
+                                </dd>
+                            </>
+                        ))}
+                    </dl>
                 </section>
                 <section>
                     <h2>Interests</h2>
