@@ -41,7 +41,14 @@ export const Header = component$(() => {
             </div>
             <div class="main">
                 <ThemeSelector />
-                <h1 class={css({ fontSize: "min(7vw, 9vh)" })}>Nick White</h1>
+                <h1
+                    class={css({
+                        fontSize: "clamp(2rem, 7vw, 3.3rem)",
+                        lineHeight: "clamp(2rem, 7vw, 3.3rem)",
+                    })}
+                >
+                    Nick White
+                </h1>
                 <address
                     class={css({
                         position: "relative",
