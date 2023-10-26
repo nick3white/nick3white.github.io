@@ -397,20 +397,20 @@ export default component$(() => {
 
                     <h3>Technology</h3>
                     <li>
-                        **Qwik** JS has got me thinking about how (and when!) I
-                        deliver JS to the client; while it may not make a
+                        <b>Qwik</b> JS has got me thinking about how (and when!)
+                        I deliver JS to the client; while it may not make a
                         difference to efficiency (depending on the bundle), but
                         it helps to keep from getting too abstract in my
                         thinking.
                     </li>
                     <li>
                         I've been making websites since they were just HTML, so
-                        playing with **HTMX** reminds me of that era. JavaScript
-                        makes it feel like everything is imaginary except JS;
-                        HTMX reminds me of the before times.
+                        playing with <b>HTMX</b> reminds me of that era.
+                        JavaScript makes it feel like everything is imaginary
+                        except JS; HTMX reminds me of the before times.
                     </li>
                     <li>
-                        Playing around with **Lit** - and working with web
+                        Playing around with <b>Lit</b> - and working with web
                         components generally - feels like you're Gambit from the
                         X-Men. I love their versatility - though, to be honest,
                         I haven't found a great use case in my work.
@@ -419,18 +419,19 @@ export default component$(() => {
                 <section>
                     <h3>Non-Technology</h3>
                     <li>
-                        I'm always excited to have conversations about
-                        **music**. I have pretty wide tastes, from 50s jazz, 60s
-                        experimental music, 70s dub, 80s hardcore, 90s indie,
-                        00s IDM, to Simpsonwave in the 2010s, there's always
-                        something interesting going on.
+                        I'm always excited to have conversations about{" "}
+                        <b>music</b>. I have pretty wide tastes, from 50s jazz,
+                        60s experimental music, 70s dub, 80s hardcore, 90s
+                        indie, 00s IDM, to Simpsonwave in the 2010s, there's
+                        always something interesting going on.
                     </li>
                     <li>
-                        **Arts & Literature** may seem like they're far afield,
-                        but they inform the foundations of my approaches.
-                        Non-representational Theory (Gilles Deleuze, Guy Debord)
-                        and phenomenology (Maurice Blanchot, Alphonso Lingis)
-                        are a couple of specific areas of interest.
+                        <b>Arts & Literature</b> may seem like they're far
+                        afield, but they inform the foundations of my
+                        approaches. Non-representational Theory (Gilles Deleuze,
+                        Guy Debord) and phenomenology (Maurice Blanchot,
+                        Alphonso Lingis) are a couple of specific areas of
+                        interest.
                     </li>
                 </section>
             </article>
