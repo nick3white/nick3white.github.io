@@ -215,8 +215,8 @@ export default component$(() => {
                         listStyleType: "none",
                     },
                     "& h2": {
-                        fontSize: "clamp(1.77rem, 6vw, 3rem)",
-                        lineHeight: "clamp(1.77rem, 6vw, 3rem)",
+                        fontSize: "clamp(1.66rem, 6vw, 3rem)",
+                        lineHeight: "clamp(1.66rem, 6vw, 3rem)",
                     },
                     "& li": {
                         marginBlock: "8px",
@@ -225,8 +225,8 @@ export default component$(() => {
                         border: "1px solid rgba(var(--splash),0.33)",
                     },
                     "& h3": {
-                        fontSize: "clamp(1.5rem, 5vw, 2rem)",
-                        lineHeight: "clamp(1.5rem, 5vw, 2rem)",
+                        fontSize: "clamp(1.33rem, 5vw, 2rem)",
+                        lineHeight: "clamp(1.33rem, 5vw, 2rem)",
                         // height: "72px",
                         // zIndex: 300,
                         // textAlign: "right",
@@ -241,8 +241,8 @@ export default component$(() => {
                         class={css({
                             position: "relative",
                             "& .normo": {
-                                fontSize: "clamp(1.77rem, 6vw, 3rem)",
-                                lineHeight: "clamp(1.77rem, 6vw, 3rem)",
+                                fontSize: "clamp(1.66rem, 6vw, 3rem)",
+                                lineHeight: "clamp(1.66rem, 6vw, 3rem)",
                                 opacity: 0.99,
                                 transition: "250ms",
                             },
@@ -250,8 +250,8 @@ export default component$(() => {
                                 opacity: 0,
                             },
                             "& .hido": {
-                                fontSize: "clamp(1.5rem, 5vw, 2.5rem)",
-                                lineHeight: "clamp(1.5rem, 5vw, 2.5rem)",
+                                fontSize: "clamp(0.85rem, 4vw, 2rem)",
+                                lineHeight: "clamp(0.85rem, 4vw, 2rem)",
                                 display: "flex",
                                 justifyContent: "flex-start",
                                 alignItems: "center",
@@ -259,7 +259,7 @@ export default component$(() => {
                                 top: 0,
                                 right: 0,
                                 bottom: 0,
-                                left: "32px",
+                                // left: "clamp(1.77rem, 6vw, 3rem)",
                                 opacity: 0,
                                 transition: "250ms",
                             },
