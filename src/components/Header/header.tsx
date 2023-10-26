@@ -43,6 +43,7 @@ export const Header = component$(() => {
                 <ThemeSelector />
                 <h1
                     class={css({
+                        textAlign: "right",
                         fontSize: "clamp(2rem, 7vw, 3.3rem)",
                         lineHeight: "clamp(2rem, 7vw, 3.3rem)",
                     })}
@@ -54,6 +55,7 @@ export const Header = component$(() => {
                         position: "relative",
                         display: "flex",
                         flexDirection: "column",
+                        textAlign: "right",
                         // width: "100%",
                         justifyContent: "flex-end",
                         alignItems: "flex-end",
@@ -81,7 +83,7 @@ export const Header = component$(() => {
                     })}
                 >
                     <p>312.292.8607</p>
-                    <p>nick33white at gmail point com</p>
+                    <p>nick33white at gmail</p>
                     <p>Chicago</p>
                     <a href="#contact">Contact</a>
                 </address>

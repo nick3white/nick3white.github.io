@@ -72,8 +72,10 @@ export default component$(() => {
                 lg: {
                     flexDirection: "row",
                 },
+
+                marginInline: "clamp(8px, 1vh, 16px)",
+                paddingInline: "clamp(8px, 1vh, 16px)",
                 gap: "32px",
-                padding: "16px",
                 "& aside": {
                     flex: 1,
                     display: "flex",
@@ -82,7 +84,8 @@ export default component$(() => {
                     zIndex: "200",
                     height: "100%",
                     top: "16px",
-                    marginInline: "32px",
+                    marginInline: "clamp(8px, 1vh, 16px)",
+                    // paddingInline: "clamp(8px, 1vh, 16px)",
                     lg: {
                         paddingInline: 0,
                         marginInline: 0,
@@ -98,7 +101,7 @@ export default component$(() => {
                 },
                 "& .skill-sublist": {
                     position: "relative",
-                    paddingLeft: "16px",
+                    // paddingLeft: "16px",
                     "& dd": {
                         pointerEvents: "none",
                         opacity: 0.001,
@@ -140,8 +143,8 @@ export default component$(() => {
                     boxShadow: "var(--shadow-soft)",
                 },
                 "& dt, dd": {
-                    marginInline: "32px",
-                    paddingInline: "32px",
+                    marginInline: "clamp(8px, 1vh, 32px)",
+                    paddingInline: "clamp(8px, 1vh, 32px)",
                 },
                 "& dt": {
                     textShadow: "var(--text-shadow-soft)",
@@ -207,9 +210,13 @@ export default component$(() => {
             <article
                 class={css({
                     "& ul, li, h2, h3": {
-                        marginInline: "32px",
-                        paddingInline: "32px",
+                        marginInline: "clamp(8px, 1vh, 32px)",
+                        paddingInline: "clamp(8px, 1vh, 32px)",
                         listStyleType: "none",
+                    },
+                    "& h2": {
+                        fontSize: "clamp(1.77rem, 6vw, 3rem)",
+                        lineHeight: "clamp(1.77rem, 6vw, 3rem)",
                     },
                     "& li": {
                         marginBlock: "8px",
@@ -218,6 +225,8 @@ export default component$(() => {
                         border: "1px solid rgba(var(--splash),0.33)",
                     },
                     "& h3": {
+                        fontSize: "clamp(1.5rem, 5vw, 2rem)",
+                        lineHeight: "clamp(1.5rem, 5vw, 2rem)",
                         // height: "72px",
                         // zIndex: 300,
                         // textAlign: "right",
@@ -232,6 +241,8 @@ export default component$(() => {
                         class={css({
                             position: "relative",
                             "& .normo": {
+                                fontSize: "clamp(1.77rem, 6vw, 3rem)",
+                                lineHeight: "clamp(1.77rem, 6vw, 3rem)",
                                 opacity: 0.99,
                                 transition: "250ms",
                             },
@@ -239,7 +250,8 @@ export default component$(() => {
                                 opacity: 0,
                             },
                             "& .hido": {
-                                fontSize: "22px",
+                                fontSize: "clamp(1.5rem, 5vw, 2.5rem)",
+                                lineHeight: "clamp(1.5rem, 5vw, 2.5rem)",
                                 display: "flex",
                                 justifyContent: "flex-start",
                                 alignItems: "center",

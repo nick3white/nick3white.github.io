@@ -228,9 +228,3 @@ h5,
 h6 {
     text-shadow: var(--text-shadow);
 }
-h2 {
-    font-size: 44px;
-}
-h3 {
-    font-size: 33px;
-}
