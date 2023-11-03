@@ -18,7 +18,7 @@ const pubs = [
     [
         "The Collective Wisdom Handbook",
         "Book",
-        "Covers the history, practice, best practices, and technology available to support, crowdsourcing transcriptions in cultural heritage institutions.  Written by me and 20 of my closest friends.",
+        "Covers the history, practice, best practices, and technology used crowdsourcing transcriptions in cultural heritage institutions.  Written by me and 20 of my closest friends.",
     ],
     [
         "IIIF and the Problem with CSS Image Cropping",
@@ -37,7 +37,7 @@ const pubs = [
         "Presented to a number of college classes, a summary of what we do and how we do it.",
     ],
     [
-        "From Socrates to Stack Exchance",
+        "From Socrates to Stack Exchange",
         "Job Talk",
         "Covering the general applications and use cases of various languages, covering Bash (and Linux generally), Python, and JavaScript",
     ],
