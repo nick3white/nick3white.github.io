@@ -20,6 +20,10 @@ const socialMediaLinks: SocialMediaLink[] = [
         url: "https://medium.com/@nick33white",
     },
     {
+        platform: "github",
+        url: "https://github.com/nick3white/",
+    },
+    {
         platform: "codepen",
         url: "https://codepen.io/nick3white",
     },
