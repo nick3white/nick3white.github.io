@@ -43,7 +43,7 @@ type Publication = {
 
 const publications: Publication[] = [
     {
-        title: "Design Theory: Movement and Place in Mapping Movement",
+        title: "Movement and Place in Mapping Movement",
         type: "Article",
         year: 2023,
         description:
