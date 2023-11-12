@@ -1,5 +1,5 @@
 {
-  "manifestHash": "901239",
+  "manifestHash": "ibs4fb",
   "symbols": {
     "s_02wMImzEAbk": {
       "origin": "../node_modules/@builder.io/qwik-city/index.qwik.mjs",
@@ -64,7 +64,7 @@
       "captures": false,
       "loc": [
         3467,
-        22498
+        22033
       ]
     },
     "s_Nk9PlpjQm9Y": {
@@ -727,7 +727,7 @@
       "location": "head",
       "attributes": {
         "rel": "stylesheet",
-        "href": "/build/q-5fac1e94.css"
+        "href": "/build/q-467457df.css"
       }
     }
   ],
