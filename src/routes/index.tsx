@@ -244,7 +244,9 @@ export default component$(() => {
                             // const linkgcc = socialMediaLinks[platform] as string;
                             return (
                                 <li key={social.platform}>
-                                    <a href={social.url}>{social.platform}</a>
+                                    <a href={social.url} target="_blank">
+                                        {social.platform}
+                                    </a>
                                 </li>
                             );
                         })}
