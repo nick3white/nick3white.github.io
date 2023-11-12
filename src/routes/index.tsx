@@ -293,19 +293,11 @@ export default component$(() => {
                     },
                     "& li": {
                         marginBlock: "8px",
-                        // borderLeft: "3px solid rgba(var(--splash),0.33)",
-                        // borderBottom: "1px solid rgba(var(--splash),0.33)",
                         border: "1px solid rgba(var(--splash),0.33)",
                     },
                     "& h3": {
                         fontSize: "clamp(1.33rem, 5vw, 2rem)",
                         lineHeight: "clamp(1.33rem, 5vw, 2rem)",
-                        // height: "72px",
-                        // zIndex: 300,
-                        // textAlign: "right",
-                        // backdropFilter: "blur(16px)",
-                        // position: "sticky",
-                        // top: "min(calc(7vw + 44px), calc(9vh + 44px))",
                     },
                 })}
             >
