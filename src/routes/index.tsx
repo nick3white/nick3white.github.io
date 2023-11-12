@@ -5,47 +5,94 @@ import Halloween from "~/media/halloween.png?jsx";
 import RaceBeforeRace from "~/media/rb4r.png?jsx";
 import MappingMovement from "~/media/mapping-movement.png?jsx";
 
+type SocialMediaLink = {
+    platform: string;
+    url: string;
+};
+
+const socialMediaLinks: SocialMediaLink[] = [
+    {
+        platform: "linkedin",
+        url: "https://www.linkedin.com/in/nick-white-511000288/",
+    },
+    {
+        platform: "medium",
+        url: "https://medium.com/@nick33white",
+    },
+    {
+        platform: "codepen",
+        url: "https://codepen.io/nick3white",
+    },
+];
 const skills: [string, string[]][] = [
-    ["JavaScript", ["Svelte", "React", "Qwik", "node", "(and many more)"]],
-    ["Data & Scripting", ["Python", "Pandas", "bash"]],
+    ["JavaScript", ["Svelte", "React", "Qwik", "Node", "(and many more)"]],
+    ["Data & Scripting", ["Python", "Pandas", "Bash"]],
     [
         "Dev Ops / Sysadmin",
-        ["Linux", "Apache / LAMP", "Serverless / JAMstack", "CI/CD"],
+        ["Linux", "Apache / LAMP", "IaC, IaaS, BaaS", "CI/CD"],
     ],
     ["Database", ["MySQL", "PostgreSQL", "Prisma", "Redis"]],
 ];
-const pubs = [
-    [
-        "The Collective Wisdom Handbook",
-        "Book",
-        "Covers the history, practice, best practices, and technology used crowdsourcing transcriptions in cultural heritage institutions.  Written by me and 20 of my closest friends.",
-    ],
-    [
-        "IIIF and the Problem with CSS Image Cropping",
-        "Article",
-        "Explains the challenges of CSS image handling and how to use IIIF to solve them.",
-        "https://medium.com/@digitalnewberry/iiif-and-the-problem-with-css-image-cropping-651cfeb5593b",
-    ],
-    [
-        "FOSS: What and Why",
-        "Job Talk",
-        "Overview of what FOSS means, what open source is, and their value, both ethically and practically",
-    ],
-    [
-        "Digitial Initiatives Career Talk",
-        "Job Talk",
-        "Presented to a number of college classes, a summary of what we do and how we do it.",
-    ],
-    [
-        "From Socrates to Stack Exchange",
-        "Job Talk",
-        "Covering the general applications and use cases of various languages, covering Bash (and Linux generally), Python, and JavaScript",
-    ],
-    [
-        "The Time Machine",
-        "Conference Paper, Code4Lib Chicago, 2019",
-        "Covers technology used for the Time Machine project, from crowdsourcing transcription, to Gatsby & the importance of SSG to libraries",
-    ],
+type Publication = {
+    title: string;
+    type: string;
+    year: number;
+    description: string;
+    url?: string;
+};
+
+const publications: Publication[] = [
+    {
+        title: "Design Theory: Movement and Place in Mapping Movement",
+        type: "Article",
+        year: 2023,
+        description:
+            "In the development of the Mapping Movement rebuild, I used place and movement to recreate something of the book-experience, while also evoking the spirit of the Mapping Movement project.",
+        url: "https://medium.com/@nick33white/design-theory-movement-and-place-in-mapping-movement-375110749b73",
+    },
+    {
+        title: "The Collective Wisdom Handbook",
+        type: "Book",
+        year: 2021,
+        description:
+            "Covers the history, practice, best practices, and technology used crowdsourcing transcriptions in cultural heritage institutions. Written by me and 20 of my closest friends.",
+    },
+    {
+        title: "IIIF and the Problem with CSS Image Cropping",
+        type: "Article",
+        year: 2019,
+        description:
+            "Explains the challenges of CSS image handling and how to use IIIF to solve them.",
+        url: "https://medium.com/@digitalnewberry/iiif-and-the-problem-with-css-image-cropping-651cfeb5593b",
+    },
+    {
+        title: "FOSS: What and Why",
+        type: "Job Talk",
+        year: 2020,
+        description:
+            "Overview of what FOSS means, what open source is, and their value, both ethically and practically",
+    },
+    {
+        title: "Digitial Initiatives Career Talk",
+        type: "Job Talk",
+        year: 2021,
+        description:
+            "Presented to a number of college classes, a summary of what we do and how we do it.",
+    },
+    {
+        title: "From Socrates to Stack Exchange",
+        type: "Job Talk",
+        year: 2022,
+        description:
+            "Covering the general applications and use cases of various languages, covering Bash (and Linux generally), Python, and JavaScript",
+    },
+    {
+        title: "The Time Machine",
+        type: "Conference Paper, Code4Lib Chicago",
+        year: 2019,
+        description:
+            "Covers technology used for the Time Machine project, from crowdsourcing transcription, to Gatsby & the importance of SSG to libraries",
+    },
 ];
 type WorkSample = [string, string, JSXNode];
 
@@ -142,16 +189,29 @@ export default component$(() => {
                     borderBottom: "var(--border)",
                     boxShadow: "var(--shadow-soft)",
                 },
-                "& dt, dd": {
+                "& dt, dd, .socials li": {
                     marginInline: "clamp(8px, 1vh, 32px)",
                     paddingInline: "clamp(8px, 1vh, 32px)",
                 },
                 "& dt": {
+                    borderBottom: "2px solid rgba(var(--fg-1), 0.3)",
+                },
+                "& dt, .socials li": {
                     textShadow: "var(--text-shadow-soft)",
-                    borderBottom: "2px solid rgba(var(--fg-1), 0.5)",
                     fontWeight: "bold",
                     fontSize: "1.25rem",
                     marginBlock: "3px",
+                },
+                "& .socials li": {
+                    background:
+                        "linear-gradient(to right,rgba(var(--fg-1),.3),rgba(var(--fg-1),.3)),linear-gradient(to right,rgba(var(--fg-1),1),rgba(var(--fg-1),1))",
+                    backgroundSize: "100% .1rem,0 .1rem",
+                    backgroundPosition: "100% 100%,0 100%",
+                    backgroundRepeat: "no-repeat",
+                    transition: "background-size .3s",
+                    "&:hover": {
+                        backgroundSize: "0 .1rem,100% .1rem",
+                    },
                 },
                 "& dd": {
                     border: "1px solid rgba(var(--splash),0.33)",
@@ -173,6 +233,19 @@ export default component$(() => {
             })}
         >
             <aside>
+                <section class="socials">
+                    <h3>Socials</h3>
+                    <ul>
+                        {socialMediaLinks.map((social) => {
+                            // const linkgcc = socialMediaLinks[platform] as string;
+                            return (
+                                <li key={social.platform}>
+                                    <a href={social.url}>{social.platform}</a>
+                                </li>
+                            );
+                        })}
+                    </ul>
+                </section>
                 <section class="skill-lists">
                     <h3>Skills</h3>
                     <ul>
@@ -380,25 +453,25 @@ export default component$(() => {
                 <section>
                     <h2>Publications (&amp;c)</h2>
                     <dl>
-                        {pubs.map((p) => (
+                        {publications.map((p) => (
                             <>
-                                <dt>{p[0]}</dt>
+                                <dt>{p.title}</dt>
                                 <dd>
                                     <em>
-                                        {p[3] ? (
+                                        {p.url ? (
                                             <a
-                                                href={p[3]}
+                                                href={p.url}
                                                 target="_blank"
                                                 class="art-link"
                                             >
-                                                {p[1]}
+                                                {p.type}
                                             </a>
                                         ) : (
-                                            p[1]
+                                            p.type
                                         )}
                                         .
                                     </em>
-                                    {p[2]}
+                                    {p.year}. {p.description}
                                 </dd>
                             </>
                         ))}
