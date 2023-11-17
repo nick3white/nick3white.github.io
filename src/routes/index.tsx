@@ -55,6 +55,13 @@ const publications: Publication[] = [
         url: "https://medium.com/@nick33white/design-theory-movement-and-place-in-mapping-movement-375110749b73",
     },
     {
+        title: "Marble Runs, Clown Cars, and Metadata Schemas",
+        type: "Conference Presentation, Digital Library Federation 2023 Forum",
+        year: 2023,
+        description:
+            "Described the flow of data from legacy systems to new ones, using a 'value first' approach (marble run) in a multiply-redundant data environment, the problem with validating values (clown car), and the improvements available using an 'attribute first' approach",
+    },
+    {
         title: "The Collective Wisdom Handbook",
         type: "Book",
         year: 2021,
@@ -92,7 +99,7 @@ const publications: Publication[] = [
     },
     {
         title: "The Time Machine",
-        type: "Conference Paper, Code4Lib Chicago",
+        type: "Conference Presentation, Code4Lib Chicago",
         year: 2019,
         description:
             "Covers technology used for the Time Machine project, from crowdsourcing transcription, to Gatsby & the importance of SSG to libraries",
@@ -342,28 +349,28 @@ export default component$(() => {
                     </h2>
 
                     <li>
-                        Extensive experience executing and iterating designs
-                        using JavaScript, React JS, Svelte JS, and more,
-                        emphasizing usability, appeal, and accessibility{" "}
+                        Extensive experience executing designs using JavaScript,
+                        React JS, Svelte JS, and more, emphasizing usability,
+                        appeal, and accessibility
                     </li>
                     <li>
                         Extensive experience developing utilities and scripts
                         for use in large scale data projects, for both data
-                        transformation and data analysis
+                        manipulation and data analysis
+                    </li>
+                    {/* <li> */}
+                    {/*     Experience performing DevOps and Sys Admin tasks */}
+                    {/*     including linux server admin, serverless & CI/CD */}
+                    {/*     technologies, and maintaining off the shelf software */}
+                    {/* </li> */}
+                    <li>
+                        Jack-of-all-trades tech lead experience: management and
+                        maintenance of all the things: Redis, PostgreSQL, MySQL,
+                        LAMP stack, CI/CD & serverless, IaaS, BaaS, IaC, etc
                     </li>
                     <li>
-                        Experience performing DevOps and Sys Admin tasks
-                        including linux server admin, serverless & CI/CD
-                        technologies, and maintaining off the shelf software
-                    </li>
-                    <li>
-                        Experience with database management, using Redis, MySQL,
-                        PostgreSQL, SQLite, and others, from the command line
-                        and from within ORMs
-                    </li>
-                    <li>
-                        Experience as principal/primary developer as well as
-                        with mentorship of junior developers
+                        Experience coaching junior developers and assisting with
+                        self-directed education & training
                     </li>
                 </section>
                 <section>
@@ -419,14 +426,16 @@ export default component$(() => {
                     </li>
                 </section>
                 <section>
-                    <h3>Freelance Web Development</h3>
+                    <h3>Freelance Web Development & Consulting</h3>
                     <li>
-                        Pretty standard freelance web dev: built sites for
-                        clients, or updated existing ones; some projects were 10
-                        year old behemoths for which I just used PHP and CSS,
-                        while others were new creations, for which I used
-                        everything from Django to Angular (which was new at the
-                        time!){" "}
+                        Used PHP, CSS, JavaScript (Angular 1.0, jQuery) to
+                        develop new websites and rebuilt older ones for various
+                        clients, or updated existing ones
+                    </li>
+                    <li>
+                        Consulted with clients from my Codifyd days with whom I
+                        had established ongoing relationships; specialized in
+                        data remediation, ETL, and how to train data analysts
                     </li>
                 </section>
                 <section>
@@ -434,8 +443,8 @@ export default component$(() => {
 
                     <li>
                         Handled data remediation, transformation, and
-                        restructuring for large scale projects, delivering
-                        millions of cleaned records yearly
+                        restructuring for large scale data cleanig and ETL
+                        projects, delivering millions of cleaned records yearly
                     </li>
                     <li>
                         Consulted nationally and internationally on data

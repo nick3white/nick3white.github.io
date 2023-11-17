@@ -1,0 +1,1 @@
+import{H as s,v as a,_ as o}from"./q-e306251e.js";const c=["light","dark","synth"];function r(e,t){t.value=e,document.documentElement.className=e,localStorage.setItem("theme",e)}const _=s(a(()=>o(()=>import("./q-243eabaa.js"),["build/q-243eabaa.js","build/q-e306251e.js","build/q-e2e295ef.js"]),"s_cLxhDSZvvW8"));export{_ as T,r as a,c as t};
