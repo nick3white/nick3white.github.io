@@ -81,7 +81,7 @@ const publications: Publication[] = [
         type: "Article",
         year: 2019,
         description:
-            "Explains the challenges of CSS image handling and how to use IIIF to solve them.",
+            "Explains the challenges of CSS image handling and how to use IIIF to solve them.  Somewhat deprecated with advancements in CSS since then, but it was my first tech-centered essay, so I have fond memories.",
         url: "https://medium.com/@digitalnewberry/iiif-and-the-problem-with-css-image-cropping-651cfeb5593b",
     },
     {
