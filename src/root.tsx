@@ -26,10 +26,10 @@ export default component$(() => {
                         (function() {
                             function setTheme(theme) {
                                 document.documentElement.className = theme
-                                localStorage.setItem('theme', theme);
+                                localStorage.setItem('nw-theme', theme);
                             }
 
-                            var theme = localStorage.getItem('theme');
+                            var theme = localStorage.getItem('nw-theme');
 
                             if (theme) {
                                 setTheme(theme);
@@ -41,14 +41,15 @@ export default component$(() => {
                         window.addEventListener('load', function() {
 
                             if (localStorage.getItem('theme')){
-                                const btnId = 'theme-btn-' + localStorage.getItem('theme')
+                                const btnId = 'theme-btn-' + localStorage.getItem('nw-theme')
+console.log(btnId)
                                 let activeButton = document.getElementById(btnId) 
                                 activeButton.classList.add("visible");
                                 activeButton.classList.remove('invisible');
 
                             } else {
                                 document.documentElement.className = 'light'
-                                localStorage.setItem('theme', 'light');
+                                localStorage.setItem('nw-theme', 'light');
                                 const themeButtonContainer = document.getElementById('theme-button-container')
                                 const themeButtons = themeButtonContainer.querySelectorAll('#theme-button-container > button');
                                 

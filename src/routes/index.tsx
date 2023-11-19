@@ -55,6 +55,14 @@ const publications: Publication[] = [
         url: "https://medium.com/@nick33white/design-theory-movement-and-place-in-mapping-movement-375110749b73",
     },
     {
+        title: "Z-Index: The Puzzle Stacked On an Enigma Stacked Under a Riddle",
+        type: "Article",
+        year: 2023,
+        description:
+            "A spinoff of the Mapping Movement article, oriented toward developers; I learned a lot about z-index in that project, a notoriously challenging topic,",
+        url: "https://medium.com/@nick33white/az-index-the-puzzle-stacked-on-an-enigma-stacked-under-a-riddle-7be98499f779",
+    },
+    {
         title: "Marble Runs, Clown Cars, and Metadata Schemas",
         type: "Conference Presentation, Digital Library Federation 2023 Forum",
         year: 2023,
