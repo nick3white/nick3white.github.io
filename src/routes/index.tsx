@@ -221,7 +221,7 @@ export default component$(() => {
                     fontSize: "1.25rem",
                     marginBlock: "3px",
                 },
-                "& .socials li": {
+                "& .socials li, .pdf-link": {
                     background:
                         "linear-gradient(to right,rgba(var(--fg-1),.3),rgba(var(--fg-1),.3)),linear-gradient(to right,rgba(var(--fg-1),1),rgba(var(--fg-1),1))",
                     backgroundSize: "100% .1rem,0 .1rem",
@@ -383,7 +383,7 @@ export default component$(() => {
                 </section>
                 <section>
                     <h2>Work History</h2>
-
+<a class={css({fontStyle: "italic", marginLeft: "24px"}) + " pdf-link"} href="/nick-white-resume.pdf" target="_blank" >Now available: download my resume in stunning Portable Document Format!!</a>
                     <h3>Newberry Library</h3>
 
                     <li>
