@@ -383,8 +383,8 @@ export default component$(() => {
                 </section>
                 <section>
                     <h2>Work History</h2>
-<a class={css({fontStyle: "italic", marginLeft: "24px"}) + " pdf-link"} href="/nick-white-resume.pdf" target="_blank" >Now available: download my resume in stunning Portable Document Format!!</a>
-                    <h3>Newberry Library</h3>
+<a class={css({fontStyle: "italic", marginLeft: "24px"}) + " pdf-link"} href="/nick-white-resume-231217.pdf" target="_blank" >Now available: download my resume in stunning Portable Document Format!!</a>
+                    <h3>Newberry Library</h3>-
 
                     <li>
                         Built and rebuilt 10+ projects as the principal
