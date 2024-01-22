@@ -1,0 +1,227 @@
+/**
+ * PandaCSS CSS layers
+ * View the full documentation at https://panda-css.com/docs/concepts/cascade-layers#layer-css
+ */
+@layer reset, base, tokens, recipes, utilities;
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    font-family:
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        "Helvetica Neue",
+        Arial,
+        "Noto Sans",
+        sans-serif,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        "Noto Color Emoji";
+    --1: 193, 223, 192;
+    --splash: 120, 162, 137; /* splash is the same as #2 */
+    --3: 187, 237, 205;
+    --4: 128, 160, 120;
+    --splash-color: rgb(--splash);
+    --splash-color-alt: rgb(--splash);
+    --fg-1: 44, 48, 6;
+    --fg-color-1: rgb(var(--fg-1));
+    --bg-1: 187, 237, 205;
+    --bg-color-1: radial-gradient(
+            18% 28% at 24% 50%,
+            rgba(var(--1), 1) 7%,
+            #00000000 100%
+        ),
+        radial-gradient(
+            70% 53% at 36% 76%,
+            rgba(var(--splash), 1) 0,
+            #00000000 100%
+        ),
+        radial-gradient(
+            21% 37% at 72% 23%,
+            rgba(var(--3), 1) 24%,
+            #00000000 100%
+        ),
+        radial-gradient(
+            35% 56% at 91% 74%,
+            rgba(var(--4), 1) 9%,
+            #00000000 100%
+        );
+
+    --text-shadow: none;
+    --border: 3px solid rgb(var(--fg-1));
+    --shadow: 0px 0px 10px 5px rgba(var(--fg-1), 0.2);
+    --shadow-soft: 0px 0px 10px 5px rgba(var(--fg-1), 0.1);
+    --border-radius: 0;
+}
+*,
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth !important;
+}
+
+body {
+    font-family: "noto sans mono", monospace;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: inherit;
+    color: var(--fg-color-1);
+    background: var(--bg-color-1);
+}
+.light,
+#theme-btn-light {
+    --1: 193, 223, 192;
+    --splash: 120, 162, 137; /* splash is the same as #2 */
+    --splash-color: rgb(var(--splash));
+    --splash-color-alt: rgb(var(--1));
+    --splash-color-alt: black;
+    --3: 187, 237, 205;
+    --4: 128, 160, 120;
+    --fg-1: 44, 48, 6;
+    --fg-color-1: rgb(var(--fg-1));
+    /* --bg-1: 187, 237, 205; */
+    --bg-1: 193, 223, 192;
+    --bg-color-1: radial-gradient(
+            87% 28% at 24% 0%,
+            rgba(var(--1), 1) 1%,
+            #00000000 100%
+        ),
+        radial-gradient(
+            70% 53% at 36% 76%,
+            rgba(var(--splash), 1) 70%,
+            #00000000 100%
+        ),
+        radial-gradient(
+            21% 37% at 72% 23%,
+            rgba(var(--3), 1) 24%,
+            #00000000 100%
+        ),
+        radial-gradient(
+            35% 56% at 91% 74%,
+            rgba(var(--4), 1) 9%,
+            #00000000 100%
+        );
+
+    --text-shadow: none;
+    --text-shadow-alt: rgb(var(--1)) 1px 0 10px;
+    --text-shadow-alt-soft: var(--fg-color-1) 1px 0 10px;
+    --border: 3px solid rgb(var(--fg-1));
+    --shadow: 0px 0px 10px 5px rgba(var(--fg-1), 0.2);
+    --shadow-soft: 0px 20px 10px -5px rgba(var(--fg-1), 0.2);
+    --border-radius: 0;
+    --text-underline: 1px solid rgb(var(--splash));
+}
+
+.dark,
+#theme-btn-dark {
+    --fg-1: 204, 204, 204;
+    --fg-color-1: rgb(var(--fg-1));
+    --bg-1: 51, 51, 51;
+    --bg-color-1: rgb(var(--bg-1));
+    --splash: 168, 220, 217;
+    --splash-color: rgb(var(--splash));
+    --splash-color-alt: rgb(var(--splash));
+
+    --text-shadow: none;
+    --border: 3px solid rgb(var(--fg-1));
+    --shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+    --shadow-soft: 0px 20px 10px -5px rgba(0, 0, 0, 0.33);
+    --border-radius: 0;
+    --text-underline: 1px solid rgb(var(--splash));
+}
+
+.synth,
+#theme-btn-synth {
+    --fg-1: 255, 194, 253;
+    --fg-color-1: rgb(var(--fg-1));
+    --bg-1: 21, 2, 32;
+    --bg-color-1: rgb(var(--bg-1));
+    --splash: 22, 182, 212;
+    --splash-color: rgb(var(--splash));
+    --splash-color-alt: rgb(var(--splash));
+
+    --text-shadow: 0 0 10px #f205ae, 0 0 20px #f205ae, 0 0 40px #f205ae,
+        0 0 80px #f205ae, 0 0 160px #f205ae, 0 0 320px #f205ae,
+        0 0 640px #f205ae;
+    --text-shadow-soft: 0 0 10px #f205aeaa, 0 0 20px #f205aeaa,
+        0 0 40px #f205aeaa, 0 0 80px #f205aeaa, 0 0 160px #f205aeaa,
+        0 0 320px #f205aeaa, 0 0 640px #f205aeaa;
+    --text-shadow-alt: 0 0 10px rgb(var(--splash)), 0 0 20px rgb(var(--splash)),
+        0 0 40px rgb(var(--splash)), 0 0 80px rgb(var(--splash)),
+        0 0 160px rgb(var(--splash)), 0 0 320px rgb(var(--splash)),
+        0 0 640px rgb(var(--splash));
+    --text-shadow-alt-soft: 0 0 10px rgba(var(--splash), 0.4),
+        0 0 20px rgba(var(--splash), 0.4), 0 0 40px rgba(var(--splash), 0.4),
+        0 0 80px rgba(var(--splash), 0.4), 0 0 160px rgba(var(--splash), 0.4),
+        0 0 320px rgba(var(--splash), 0.4), 0 0 640px rgba(var(--splash), 0.4);
+    --border: 3px solid rgba(22, 182, 212, 1);
+    --shadow: inset 0 0 10px rgba(113, 213, 255, 0.5),
+        inset 0 0 20px rgba(113, 213, 255, 0.5),
+        0 0 10px rgba(113, 213, 255, 0.3), 0 0 20px rgba(113, 213, 255, 0.3),
+        0 0 40px rgba(113, 213, 255, 0.3), 0 0 80px rgba(113, 213, 255, 0.3),
+        0 0 160px rgba(113, 213, 255, 0.3), 0 0 320px rgba(113, 213, 255, 0.3);
+    --shadow-soft: 0 20px 20px -5px rgba(113, 213, 255, 0.3);
+    --border-radius: 15px;
+    --text-underline: 1px solid rgba(0, 0, 0, 0);
+}
+
+.vapor,
+#theme-btn-vapor {
+    --fg-1: 96, 67, 95;
+    --fg-color-1: rgb(var(--fg-1));
+    --bg-1: 170, 231, 232;
+    --bg-color-1: linear-gradient(
+        125deg,
+        rgba(var(--bg-1), 1) 0%,
+        rgba(255, 224, 241, 1) 100%
+    );
+    --splash: 21, 2, 32;
+    --splash-color: linear-gradient(45deg, #8fa4e0, #798abc);
+
+    --text-shadow: none;
+    --border: 3px solid rgba(22, 182, 212, 1);
+    --shadow: 24px -24px 48px #7282b2, -24px 24px 48px #9ab0f0;
+    --shadow-soft: 24px 24px 48px #7282b2;
+    /* --border-radius: 50px; */
+}
+.macos,
+#theme-btn-macos {
+    --fg-1: 96, 67, 95;
+    --fg-color-1: rgb(var(--fg-1));
+    --bg-1: 170, 231, 232;
+    --bg-color-1: linear-gradient(
+        125deg,
+        rgba(var(--bg-1), 1) 0%,
+        rgba(255, 224, 241, 1) 100%
+    );
+    --splash: 21, 2, 32;
+    --splash-color: linear-gradient(45deg, #8fa4e0, #798abc);
+
+    --text-shadow: none;
+    --border: 3px solid rgba(22, 182, 212, 1);
+    --shadow: 24px -24px 48px #7282b2, -24px 24px 48px #9ab0f0;
+    --shadow-soft: 24px 24px 48px #7282b2;
+    /* --border-radius: 50px; */
+}
+.theme-btn {
+    color: var(--fg-color-1);
+    background: rgb(var(--bg-1));
+    /* border: var(--border); */
+    /* box-shadow: var(--shadow); */
+    /* border-radius: var(--border-radius); */
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-shadow: var(--text-shadow);
+}
