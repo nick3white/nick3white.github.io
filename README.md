@@ -1,7 +1,5 @@
-# Nick 3 White
+# I've got big plans
 
-Just a simple resume website. I can't help but give it a little flash, but I think I managed to keep it tasteful. Some day I will have free time, at which point I'll finish the several other css themes I had in mind: vaporwave (a lighter, airier take on the synthwave theme), floral (who doesn't like flowers), BASIC (who doesn't love 1980s tech aesthetics), and basic (I wanted to try my hand at a super boring, Microsoft Word Resume Template style).
+Don't we all???  
 
-I could just copypaste the resume here, but that seems silly. Take a look [at the built version](https://nick3white.github.io/)!
-
-Built using Qwik, because why not!
+Helpfully, my big plans include keeping things simple.  The blog will get its own route, and the resume will be a side-item rather than the focus; this page will be a directory kinda thing.  
