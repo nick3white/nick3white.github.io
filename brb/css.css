@@ -1,0 +1,35 @@
+html {
+  --bg-color: 33,33,37;
+  --fg-color: 233,233,233;
+}
+
+@font-face {
+    font-family: "styrene";
+  font-weight: 400;
+    src: url("/fonts/StyreneB-Regular-Web.woff");
+}
+
+@font-face {
+    font-family: "styrene";
+  font-weight: 700;
+    src: url("/fonts/StyreneB-Bold-Web.woff");
+}
+body {
+  font-family: "styrene", monospace;
+
+}
+
+a:not(.no-lines) {
+    background: linear-gradient(to right, rgba(var(--fg-color), .3), rgba(var(--fg-color), .3)), linear-gradient(to right, rgba(var(--fg-color), 1), rgba(var(--fg-color), 1));
+    background-size: 100% .1rem, 0 .1rem;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size .3s;
+}
+
+a:not(.no-lines):hover,
+a:not(.no-lines):focus {
+    background-size: 0 .1rem, 100% .1rem;
+}
+
+

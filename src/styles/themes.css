@@ -1,0 +1,140 @@
+body.dark { 
+  --background: var(--color0);
+  --foreground: var(--color7);
+}
+body:not(.dark) { 
+  --background: var(--color7);
+  --foreground: var(--color0);
+}
+.josan-gonzales {
+  --wallpaper: url('/images/josan-gonzales.png');
+  --color0: 27, 13, 31;
+  --color1: 114, 86, 131;
+  --color2: 114, 103, 142;
+  --color3: 144, 104, 136;
+  --color4: 164, 110, 137;
+  --color5: 197, 122, 136;
+  --color6: 160, 144, 141;
+  --color7: 201, 208, 213;
+  --color8: 140, 145, 149;
+}
+.bg-palmtrees {
+  --wallpaper: url('/images/bg-palmtrees.jpeg');
+  --color0: 52, 33, 46;
+  --color1: 142, 168, 153;
+  --color2: 167, 180, 153;
+  --color3: 149, 180, 167;
+  --color4: 165, 189, 169;
+  --color5: 202, 184, 138;
+  --color6: 168, 193, 169;
+  --color7: 207, 218, 208;
+  --color8: 144, 152, 145;
+}
+.Neon_Nights {
+  --wallpaper: url('/images/Neon_Nights.jpg');
+  --color0: 6, 5, 37;
+  --color1: 92, 93, 178;
+  --color2: 113, 104, 174;
+  --color3: 82, 94, 194;
+  --color4: 90, 97, 206;
+  --color5: 135, 96, 146;
+  --color6: 185, 73, 178;
+  --color7: 164, 198, 235;
+  --color8: 114, 138, 164;
+}
+.masashi-wakui-misc-1 {
+  --wallpaper: url('/images/masashi-wakui-misc-1.jpg');
+  --color0: 11, 22, 17;
+  --color1: 41, 71, 55;
+  --color2: 40, 79, 76;
+  --color3: 33, 89, 94;
+  --color4: 77, 110, 90;
+  --color5: 111, 124, 100;
+  --color6: 50, 117, 137;
+  --color7: 161, 193, 203;
+  --color8: 112, 135, 142;
+}
+.This_Automatic_Eden {
+  --wallpaper: url('/images/This_Automatic_Eden.jpg');
+  --color0: 15, 13, 24;
+  --color1: 41, 147, 239;
+  --color2: 37, 153, 237;
+  --color3: 82, 172, 238;
+  --color4: 63, 192, 233;
+  --color5: 95, 205, 244;
+  --color6: 168, 169, 219;
+  --color7: 199, 229, 239;
+  --color8: 139, 160, 167;
+}
+.aoihana6 {
+  --wallpaper: url('/images/aoihana6.jpeg');
+  --color0: 5, 5, 5;
+  --color1: 168, 168, 168;
+  --color2: 184, 184, 184;
+  --color3: 200, 200, 200;
+  --color4: 211, 211, 211;
+  --color5: 220, 220, 220;
+  --color6: 231, 231, 231;
+  --color7: 241, 241, 241;
+  --color8: 168, 168, 168;
+}
+.masashi-wakui-misc-2 {
+  --wallpaper: url('/images/masashi-wakui-misc-2.jpg');
+  --color0: 10, 15, 13;
+  --color1: 72, 83, 92;
+  --color2: 149, 29, 48;
+  --color3: 11, 104, 145;
+  --color4: 54, 105, 136;
+  --color5: 71, 117, 144;
+  --color6: 99, 143, 168;
+  --color7: 178, 200, 214;
+  --color8: 124, 140, 149;
+}
+.masashi-wakui-misc-3 {
+  --wallpaper: url('/images/masashi-wakui-misc-3.jpg');
+  --color0: 19, 16, 15;
+  --color1: 138, 117, 107;
+  --color2: 122, 128, 125;
+  --color3: 143, 131, 125;
+  --color4: 162, 134, 124;
+  --color5: 199, 139, 115;
+  --color6: 122, 132, 129;
+  --color7: 194, 187, 183;
+  --color8: 135, 130, 128;
+}
+.masashi-wakui-misc-6 {
+  --wallpaper: url('/images/masashi-wakui-misc-6.jpg');
+  --color0: 21, 19, 16;
+  --color1: 147, 111, 87;
+  --color2: 150, 122, 104;
+  --color3: 109, 132, 122;
+  --color4: 165, 149, 66;
+  --color5: 156, 131, 112;
+  --color6: 166, 135, 115;
+  --color7: 208, 198, 189;
+  --color8: 145, 138, 132;
+}
+.masashi-wakui-misc-4 {
+  --wallpaper: url('/images/masashi-wakui-misc-4.jpg');
+  --color0: 3, 26, 21;
+  --color1: 17, 81, 97;
+  --color2: 96, 107, 85;
+  --color3: 121, 130, 84;
+  --color4: 6, 116, 146;
+  --color5: 86, 122, 135;
+  --color6: 33, 135, 159;
+  --color7: 203, 202, 203;
+  --color8: 142, 141, 142;
+}
+.masashi-wakui-misc-5 {
+  --wallpaper: url('/images/masashi-wakui-misc-5.jpg');
+  --color0: 10, 13, 12;
+  --color1: 108, 88, 77;
+  --color2: 136, 75, 58;
+  --color3: 159, 103, 87;
+  --color4: 167, 134, 119;
+  --color5: 149, 158, 151;
+  --color6: 151, 169, 166;
+  --color7: 204, 208, 204;
+  --color8: 142, 145, 142;
+}
