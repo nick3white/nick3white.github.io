@@ -83,7 +83,9 @@
 			[
 				['“FOSS: What and Why” (2020)', ''],
 				['“Digital Humanities Careers” (2021)', ''],
-				['“From Socrates to Stack Exchange: Why Share Knowledge” (2022)', '']
+				['“From Socrates to Stack Exchange: Why Share Knowledge” (2022)', ''],
+				['“Tools for Fast Prototyping” (2024)', ''],
+				['“Postcards: Are they the peak of human technology?” (2024)', ''],
 			]
 		],
 		intz: {
