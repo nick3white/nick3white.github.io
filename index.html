@@ -1,39 +1,309 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
   <head>
-    <meta charset="utf-8">
-    <title>Nick White, Full Stack Dev</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <link href="/favicon.svg" rel="icon" type="image/svg+xml">
-    <meta name="description" content="An internet web site">
-    <link rel="stylesheet" href="/css.css">
-    <style>
-    body {
-      width: 100vw;
-      height: 100vh;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: rgb(var(--bg-color));
-      color: rgb(var(--fg-color));
-    }
-    p {
-      width: 50vw;
-font-size: 22px;
-    }
-    a {
-      color: inherit;
-      text-decoration: inherit;
-    }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nick White, Librarian and Developer</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="themes.css" rel="stylesheet" />
+    <script src="theme-selector.js"></script>
   </head>
   <body>
-    <main>
-      <p>
-        Gonna redo this home page, make it a little less professional.  For now, here's the <a href="/resume">resume site</a>.  I'm pulling all my articles together onto a local blog, which will eventually be <a href="/blog">here</a>.
-      </p>
+    <div id="bg"></div>
+    <theme-selector
+      themes="josan-gonzales,bg-palmtrees,Neon_Nights,masashi-wakui-misc-1,This_Automatic_Eden,aoihana6,masashi-wakui-misc-2,masashi-wakui-misc-3,masashi-wakui-misc-6,masashi-wakui-misc-4,masashi-wakui-misc-5"
+      defaulttheme="masashi-wakui-misc-4"
+    ></theme-selector>
+    <main id="main">
+      <article>
+        <header>
+          <h1>
+            <span class="scroller">A</span>
+            <span class="subtitle">resume</span>
+            <span class="scroller">for</span>
+            <span class="name">Nick White</span>
+          </h1>
+        </header>
+        <section>
+          <h2>Experience</h2>
+          <dl>
+            <dt>Development</dt>
+            <dd class="skills">
+              Fluent in development using JavaScript/TypeScript, Python, PHP,
+              Bash, and whatever else.
+            </dd>
+            <dd class="skills">
+              Extensive experience working in Linux environments, including:
+              <ul>
+                <li>Ubuntu (incl. Debian, Raspbian, and Mint)</li>
+                <li>RHEL (incl. CentOS, Rocky, and Alma)</li>
+                <li>Arch Linux (i use arch btw)</li>
+              </ul>
+            </dd>
+            <dd class="skills">
+              Full stack development using a variety of frameworks, libraries,
+              and tools, including
+              <ul>
+                <li class="tech">React</li>
+                <li class="tech">Svelte</li>
+                <li class="tech">FastAPI</li>
+                <li class="tech">HTMX</li>
+                <li class="tech">Web Components</li>
+              </ul>
+              and more
+            </dd>
+            <dt>Database Administration</dt>
+            <dd class="skills">
+              Managed and maintained databases in a variety of technologies,
+              including
+              <span class="tech">MySQL</span>,
+              <span class="tech">PostgreSQL</span>,
+              <span class="tech">Redis</span>, as well as several
+              <span class="tech">BaaS</span>
+              microservice platforms
+            </dd>
+            <dt class="skills">
+              Scripting ( <span class="tech">Python</span>,
+              <span class="tech">Bash</span>)
+            </dt>
+            <dd>
+              <a
+                href="https://en.wikipedia.org/wiki/Extract,_transform,_load"
+                target="_blank"
+                title="Extract, Transform, Load"
+                >ETL</a
+              >
+              on tens of millions of data records from diverse sources: modern
+              DAMS systems or 15 year old spreadsheets
+            </dd>
+            <dt>Dev Ops</dt>
+            <dd class="skills">
+              Managed the web infrastructure for the library's digital
+              initiatives and resources:
+              <a
+                href="https://en.wikipedia.org/wiki/CI/CD"
+                target="_blank"
+                class="tech"
+                title="Continuous Integration, Continuous Delivery or Deployment"
+                >CI/CD</a
+              >,
+              <a
+                href="https://en.wikipedia.org/wiki/Infrastructure_as_a_service"
+                target="_blank"
+                class="tech"
+                title="Infrastructure as a service"
+                >IaaS</a
+              >,
+              <a
+                href="https://en.wikipedia.org/wiki/Backend_as_a_service"
+                target="_blank"
+                class="tech"
+                title="Backend as a service"
+                >BaaS</a
+              >, even a
+              <a
+                href="https://en.wikipedia.org/wiki/LAMP_(software_bundle)"
+                target="_blank"
+                class="tech"
+                title="Linux, Apache, MySQL, PHP"
+                >LAMP</a
+              >
+              server or two
+            </dd>
+            <dt class="skills">Architecture</dt>
+            <dd>
+              Maintained a Kubernetes cluster to deploy a heavily customized
+              MediaWiki installation, including a Solr container and several
+              custom containers to handle advanced features
+            </dd>
+            <dd>
+              Spearheaded transitions to modern infrastructure models, employing
+              those aspects of serverless, CI/CD, and microservices, to allow
+              organizations to lean into its strengths.
+            </dd>
+            <dd>
+              Communicated modernization needs to stakeholders with a variety of
+              technical backgrounds, effectively translating advanced topics to
+              common language and ideas.
+            </dd>
+          </dl>
+        </section>
+        <section>
+          <h2>Leadership</h2>
+          <ul>
+            <li>
+              Led teams of data modelers and data analysts to deliver hundreds
+              of thousands of clean
+              <a
+                href="https://en.wikipedia.org/wiki/Stock_keeping_unit"
+                target="_blank"
+                title="Stock-keeping unit"
+                >SKUs</a
+              >
+              to
+              <a
+                href="https://en.wikipedia.org/wiki/Business-to-business"
+                target="_blank"
+                title="Business to business"
+                >B2B</a
+              >
+              suppliers and manufacturers
+            </li>
+            <li>
+              Coach junior developers on open source projects as well as code
+              reviews on workplace projects
+            </li>
+            <li>
+              Teach new developers from the LGBTQ community through my
+              queercoding.org website (mostly scaled down through
+              <span id="qc-restart"></span>)
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Employment History</h2>
+          <dl>
+            <dt>Newberry Library</dt>
+            <dd class="date">2019 - present</dd>
+            <dd class="title">Developer and Digital Librarian</dd>
+            <dt>Freelance Development</dt>
+            <dd class="date">2014 - present</dd>
+            <dd class="title">
+              Full Stack Dev, MediaWiki, Data
+              <a
+                href="https://en.wikipedia.org/wiki/Extract,_transform,_load"
+                target="_blank"
+                title="Extract, Transform, Load"
+                >ETL</a
+              >
+              , Consulting
+            </dd>
+            <dt>Chicago Public Library</dt>
+            <dd class="date">2017 - 2020</dd>
+            <dd class="title">
+              Digital Collections & Digital Programs Coordinator
+            </dd>
+          </dl>
+        </section>
+        <section>
+          <h2>Publications and Presentations</h2>
+          <ul>
+            <li>
+              <a
+                href="https://medium.com/@nick33white/design-theory-movement-and-place-in-mapping-movement-375110749b73"
+                target="_blank"
+              >
+                “Movement and Place in Mapping Movement” (
+                <span class="pub-type">article</span>,
+                <span class="pub-date">2023</span>
+                )</a
+              >
+            </li>
+            <li>
+              “Marble Runs, Clown Cars, and Metadata Schemas” (
+              <a href="https://forum2023.diglib.org" target="_blank"
+                >DLF Forum</a
+              >
+              <span class="pub-type">conference presentation</span>,
+              <span class="pub-date">2023</span>
+              )
+            </li>
+            <li>
+              <a href="https://collectivewisdomproject.org.uk/" target="_blank"
+                >“The Collective Wisdom Handbook” (
+                <span class="pub-type">book</span>,
+                <span class="pub-date">2021</span>
+                )</a
+              >
+            </li>
+            <li>
+              “IIIF and the Problem with CSS Image Cropping” (
+              <span class="pub-type">article</span>,
+              <span class="pub-date">2019</span>
+              )
+            </li>
+            <li>
+              “The Time Machine” ( Chicago #Code4Lib
+              <span class="pub-type">conference presentation</span>,
+              <span class="pub-date">2019</span>
+              )
+            </li>
+          </ul>
+          <h3>Colloquium Presentations</h3>
+          <ul>
+            <li>“FOSS: Why?” (2020)</li>
+            <li>“Digital Initiatives and Digital Humanities” (2021)</li>
+            <li>“From Socrates to Stack Exchange” (2022)</li>
+            <li>“Prototyping with AI” (2024)</li>
+            <li>“Postcards: Are they the peak of human technology?” (2024)</li>
+          </ul>
+        </section>
+        <section id="pdf-link">
+          <a href="#">resume in PDF form</a>
+        </section>
+      </article>
     </main>
   </body>
+  <script>
+    const getSeason = (d) => (Math.floor((d.getMonth() / 12) * 4) % 4) + 1;
+    const now = new Date();
+    const season = ["winter", "spring", "summer", "fall"][getSeason(now)];
+    const year = now.getFullYear();
+    const qcr = document.getElementById("qc-restart");
+    qcr.textContent = `${season} ${year}`;
+    console.log(qcr.textContent);
+
+    // circle
+    const background = document.getElementById("bg");
+    let circleRadius = 200;
+    let embiggened = false;
+
+    document.addEventListener("mousemove", (e) => {
+      background.style.transition = `none`;
+
+      // console.log(e.clientX, e.clientY)
+      if (!embiggened) {
+        circleRadius = 200;
+        background.style.clipPath = `circle(${circleRadius}px at ${e.clientX}px ${e.clientY}px)`;
+      }
+    });
+
+    background.addEventListener("click", (e) => {
+      if (embiggened) {
+        circleRadius = 200;
+      } else {
+        circleRadius = 4000;
+      }
+      background.style.transition = `300ms clip-path`;
+      background.style.clipPath = `circle(${circleRadius}px at ${e.clientX}px ${e.clientY}px)`;
+      embiggened = !embiggened;
+    });
+    document.addEventListener(
+      "DOMContentLoaded",
+      () => {
+        background.style.clipPath = `circle(0px)`;
+        let printLink = document.getElementById("pdf-link");
+        let container = document.getElementById("main");
+
+        printLink.addEventListener(
+          "click",
+          (event) => {
+            event.preventDefault();
+            printLink.style.display = "none";
+            window.print();
+          },
+          false,
+        );
+
+        container.addEventListener(
+          "click",
+          (event) => {
+            printLink.style.display = "flex";
+          },
+          false,
+        );
+      },
+      false,
+    );
+  </script>
 </html>
