@@ -7,7 +7,10 @@ body:not(.dark) {
   --foreground: var(--color0);
 }
 .josan-gonzales {
-  --wallpaper: url("/images/josan-gonzales.png");
+  --wallpaper:
+    url("/images/josan-gonzales_large.webp"),
+    url("/images/josan-gonzales_medium.webp"),
+    url("/images/josan-gonzales_small.webp");
   --color0: 27, 13, 31;
   --color1: 114, 86, 131;
   --color2: 114, 103, 142;
@@ -19,7 +22,10 @@ body:not(.dark) {
   --color8: 140, 145, 149;
 }
 .bg-palmtrees {
-  --wallpaper: url("/images/bg-palmtrees.jpeg");
+  --wallpaper:
+    url("/images/bg-palmtrees_large.webp"),
+    url("/images/bg-palmtrees_medium.webp"),
+    url("/images/bg-palmtrees_small.webp");
   --color0: 52, 33, 46;
   --color1: 142, 168, 153;
   --color2: 167, 180, 153;
@@ -31,7 +37,10 @@ body:not(.dark) {
   --color8: 144, 152, 145;
 }
 .Neon_Nights {
-  --wallpaper: url("/images/Neon_Nights.jpg");
+  --wallpaper:
+    url("/images/Neon_Nights_large.webp"),
+    url("/images/Neon_Nights_medium.webp"),
+    url("/images/Neon_Nights_small.webp");
   --color0: 6, 5, 37;
   --color1: 92, 93, 178;
   --color2: 113, 104, 174;
@@ -43,7 +52,10 @@ body:not(.dark) {
   --color8: 114, 138, 164;
 }
 .masashi-wakui-misc-1 {
-  --wallpaper: url("/images/masashi-wakui-misc-1.jpg");
+  --wallpaper:
+    url("/images/masashi-wakui-misc-1_large.webp"),
+    url("/images/masashi-wakui-misc-1_medium.webp"),
+    url("/images/masashi-wakui-misc-1_small.webp");
   --color0: 11, 22, 17;
   --color1: 41, 71, 55;
   --color2: 40, 79, 76;
@@ -55,7 +67,10 @@ body:not(.dark) {
   --color8: 112, 135, 142;
 }
 .This_Automatic_Eden {
-  --wallpaper: url("/images/This_Automatic_Eden.jpg");
+  --wallpaper:
+    url("/images/This_Automatic_Eden_large.webp"),
+    url("/images/This_Automatic_Eden_medium.webp"),
+    url("/images/This_Automatic_Eden_small.webp");
   --color0: 15, 13, 24;
   --color1: 41, 147, 239;
   --color2: 37, 153, 237;
@@ -67,7 +82,9 @@ body:not(.dark) {
   --color8: 139, 160, 167;
 }
 .aoihana6 {
-  --wallpaper: url("/images/aoihana6.jpeg");
+  --wallpaper:
+    url("/images/aoihana6_large.webp"), url("/images/aoihana6_medium.webp"),
+    url("/images/aoihana6_small.webp");
   --color0: 5, 5, 5;
   --color1: 168, 168, 168;
   --color2: 184, 184, 184;
@@ -79,7 +96,10 @@ body:not(.dark) {
   --color8: 168, 168, 168;
 }
 .masashi-wakui-misc-2 {
-  --wallpaper: url("/images/masashi-wakui-misc-2.jpg");
+  --wallpaper:
+    url("/images/masashi-wakui-misc-2_large.webp"),
+    url("/images/masashi-wakui-misc-2_medium.webp"),
+    url("/images/masashi-wakui-misc-2_small.webp");
   --color0: 10, 15, 13;
   --color1: 72, 83, 92;
   --color2: 149, 29, 48;
@@ -91,7 +111,10 @@ body:not(.dark) {
   --color8: 124, 140, 149;
 }
 .masashi-wakui-misc-3 {
-  --wallpaper: url("/images/masashi-wakui-misc-3.jpg");
+  --wallpaper:
+    url("/images/masashi-wakui-misc-3_large.webp"),
+    url("/images/masashi-wakui-misc-3_medium.webp"),
+    url("/images/masashi-wakui-misc-3_small.webp");
   --color0: 19, 16, 15;
   --color1: 138, 117, 107;
   --color2: 122, 128, 125;
@@ -103,7 +126,10 @@ body:not(.dark) {
   --color8: 135, 130, 128;
 }
 .masashi-wakui-misc-6 {
-  --wallpaper: url("/images/masashi-wakui-misc-6.jpg");
+  --wallpaper:
+    url("/images/masashi-wakui-misc-6_large.webp"),
+    url("/images/masashi-wakui-misc-6_medium.webp"),
+    url("/images/masashi-wakui-misc-6_small.webp");
   --color0: 21, 19, 16;
   --color1: 147, 111, 87;
   --color2: 150, 122, 104;
@@ -115,7 +141,10 @@ body:not(.dark) {
   --color8: 145, 138, 132;
 }
 .masashi-wakui-misc-4 {
-  --wallpaper: url("/images/masashi-wakui-misc-4.jpg");
+  --wallpaper:
+    url("/images/masashi-wakui-misc-4_large.webp"),
+    url("/images/masashi-wakui-misc-4_medium.webp"),
+    url("/images/masashi-wakui-misc-4_small.webp");
   --color0: 3, 26, 21;
   --color1: 17, 81, 97;
   --color2: 96, 107, 85;
@@ -127,7 +156,10 @@ body:not(.dark) {
   --color8: 142, 141, 142;
 }
 .masashi-wakui-misc-5 {
-  --wallpaper: url("/images/masashi-wakui-misc-5.jpg");
+  --wallpaper:
+    url("/images/masashi-wakui-misc-5_large.webp"),
+    url("/images/masashi-wakui-misc-5_medium.webp"),
+    url("/images/masashi-wakui-misc-5_small.webp");
   --color0: 10, 13, 12;
   --color1: 108, 88, 77;
   --color2: 136, 75, 58;
