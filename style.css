@@ -16,12 +16,13 @@ body {
   --fg-color: rgb(var(--foreground));
   background: var(--bg-color, #ccc);
   color: var(--fg-color, #333);
+  --content-width: min(999px, 50vw);
 }
 main {
   backdrop-filter: blur(3px);
   background-color: color-mix(in oklab, var(--bg-color, #ccc) 70%, transparent);
   border: 1px solid var(--bg-color, #ccc);
-  width: min(999px, 50vw);
+  width: var(--content-width);
   margin: 66px auto;
   padding: 33px;
   position: relative;
@@ -29,7 +30,6 @@ main {
 }
 
 ul,
-dl li,
 dd,
 dt {
   list-style-type: none;
@@ -54,12 +54,14 @@ ul {
 }
 dd,
 li {
+  --list-border-color: color-mix(in oklab, var(--fg-color), transparent);
   margin-left: 1rem;
   padding-left: 1rem;
   border-left: 3px solid var(--list-border-color);
 }
 dd:has(ul) {
   --list-border-color: transparent;
+  padding-bottom: 0.5rem;
 }
 a {
   color: currentcolor;
@@ -99,7 +101,15 @@ a:focus {
   align-items: center;
   margin: 9px;
   padding: 9px 33px;
-  border: 1px solid rgba(33, 33, 33, 0.33);
+  border: 1px solid color-mix(in oklab, var(--fg-color), transparent);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* width: var(--content-width); */
+}
+#pdf-link a {
+  margin: auto;
 }
 
 #bg {
@@ -126,9 +136,10 @@ header {
 header h1 {
   position: sticky;
   top: -1rem;
-  padding: 0 2rem 1rem;
+  padding: 2rem 1rem;
   margin: 0;
-  border: 1px solid white;
+  border: 1px solid transparent;
+  border-bottom-color: var(--fg-color);
   height: 100%;
   background: var(--bg-color);
 }
@@ -137,6 +148,7 @@ header h1 span {
   display: block;
 }
 .subtitle {
+  line-height: 1.33rem;
   top: 10rem;
   font-size: clamp(1rem, 0.625rem + 1.6667vw, 1.5rem);
   position: sticky;
@@ -153,4 +165,43 @@ header h1 span {
 }
 .scroller:first-child {
   margin-inline: 2rem;
+}
+@media print {
+  main {
+    width: 80%;
+    margin: auto;
+    padding: 33px;
+  }
+  article {
+    padding: 0;
+  }
+  .themer {
+    display: none;
+  }
+  header {
+    height: auto;
+    position: relative;
+    top: 0;
+  }
+  header,
+  header h1,
+  header h1 span {
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative;
+  }
+  header h1 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .scroller {
+    display: none;
+  }
+
+  body {
+    --bg-color: transparent;
+  }
+  ul {
+    list-style-type: inside circle;
+  }
 }
