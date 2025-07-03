@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "abordage";
+  src:
+    url("../fonts/Abordage-Regular.woff") format("woff"),
+    url("../fonts/Abordage-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* @font-face { */
+/*   font-family: "basalte"; */
+/*   src: */
+/*     url("../fonts/Basalte-Fond.woff") format("woff"), */
+/*     url("../fonts/Basalte-Fond.woff2") format("woff2"); */
+/*   font-weight: normal; */
+/*   font-style: normal; */
+/*   font-display: swap; */
+/* } */
+@font-face {
+  font-family: "basteleur-moonlight";
+  src:
+    url("../fonts/Basteleur-Moonlight.woff") format("woff"),
+    url("../fonts/Basteleur-Moonlight.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* @font-face { */
+/*   font-family: "basteleur-bold"; */
+/*   src: */
+/*     url("../fonts/Basteleur-Bold.woff") format("woff"), */
+/*     url("../fonts/Basteleur-Bold.woff2") format("woff2"); */
+/*   font-weight: bold; */
+/*   font-style: normal; */
+/*   font-display: swap; */
+/* } */
+/* @font-face { */
+/*   font-family: "director"; */
+/*   src: */
+/*     url("../fonts/Director-Variable.woff") format("woff"), */
+/*     url("../fonts/Director-Variable.woff2") format("woff2"); */
+/*   font-weight: normal; */
+/*   font-style: normal; */
+/*   font-display: swap; */
+/* } */
+/* @font-face { */
+/*   font-family: "karrik"; */
+/*   src: */
+/*     url("../fonts/Karrik-Regular.woff") format("woff"), */
+/*     url("../fonts/Karrik-Regular.woff2") format("woff2"); */
+/*   font-weight: normal; */
+/*   font-style: normal; */
+/*   font-display: swap; */
+/* } */
+/* @font-face { */
+/*   font-family: "lineal"; */
+/*   src: */
+/*     url("../fonts/LinealVF.woff") format("woff"), */
+/*     url("../fonts/LinealVF.woff2") format("woff2"); */
+/*   font-weight: normal; */
+/*   font-style: normal; */
+/*   font-display: swap; */
+/* } */

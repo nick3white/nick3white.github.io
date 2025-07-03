@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Nick White, Librarian and Developer</title>
-    <link href="style.css" rel="stylesheet" />
-    <link href="themes.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/fonts.css" rel="stylesheet" />
+    <link href="css/themes.css" rel="stylesheet" />
     <script src="theme-selector.js"></script>
   </head>
   <body>
     <div id="bg"></div>
-    <div class="themer">
+    <div class="themer" style="opacity: 1">
       <theme-selector
         themes="josan-gonzales,bg-palmtrees,Neon_Nights,masashi-wakui-misc-1,This_Automatic_Eden,aoihana6,masashi-wakui-misc-2,masashi-wakui-misc-3,masashi-wakui-misc-6,masashi-wakui-misc-4,masashi-wakui-misc-5"
         defaulttheme="masashi-wakui-misc-4"
@@ -19,12 +20,13 @@
     <main id="main">
       <article>
         <header>
-          <h1>
+          <div class="h1">
             <span class="scroller">A</span>
             <span class="subtitle">resume</span>
             <span class="scroller">for</span>
-            <span class="name">Nick White</span>
-          </h1>
+            <h1 class="name">Nick White</h1>
+            <h2 class="tagline">Developer and Librarian</h2>
+          </div>
         </header>
         <section>
           <h2>Experience</h2>
