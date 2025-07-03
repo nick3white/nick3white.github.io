@@ -195,6 +195,9 @@ header .h1 span {
     color: black !important;
     background: transparent;
   }
+  * {
+    position: relative;
+  }
   main {
     width: 80%;
     margin: auto;
@@ -217,16 +220,31 @@ header .h1 span {
     margin: 0 !important;
     padding: 0 !important;
     position: relative;
+    display: block;
+    gap: 0;
+  }
+  .tagline {
+    opacity: 1 !important;
+  }
+  .subtitle,
+  .name {
+    margin: 0;
+    top: auto;
   }
   header .h1 {
+    top: auto;
     display: flex;
     flex-direction: column-reverse;
   }
   .scroller {
-    display: none;
+    display: none !important;
   }
 
   ul {
     list-style-type: inside circle;
+  }
+
+  #pdf-link {
+    display: none;
   }
 }
