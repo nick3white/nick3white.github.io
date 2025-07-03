@@ -19,7 +19,7 @@
     </div>
     <main id="main">
       <article>
-        <header>
+        <header id="header">
           <div class="h1">
             <span class="scroller">A</span>
             <span class="subtitle">resume</span>
@@ -248,13 +248,14 @@
     </main>
   </body>
   <script>
+    // ensure qc timestamp doesn't go out of date
     const getSeason = (d) => (Math.floor((d.getMonth() / 12) * 4) % 4) + 1;
     const now = new Date();
     const season = ["winter", "spring", "summer", "fall"][getSeason(now)];
     const year = now.getFullYear();
     const qcr = document.getElementById("qc-restart");
     qcr.textContent = `${season} ${year}`;
-    console.log(qcr.textContent);
+    // console.log(qcr.textContent);
 
     // circle
     const background = document.getElementById("bg");
@@ -308,5 +309,21 @@
       },
       false,
     );
+
+    // ensure scrolled text isn't visible
+    const header = document.getElementById("header");
+    let isScrolled = false;
+
+    document.addEventListener("scroll", (e) => {
+      // console.log(window.scrollY);
+      const shouldBeScrolled = window.scrollY > 400;
+      if (shouldBeScrolled && !isScrolled) {
+        header.classList.add("scrolled");
+        isScrolled = true;
+      } else if (!shouldBeScrolled && isScrolled) {
+        header.classList.remove("scrolled");
+        isScrolled = false;
+      }
+    });
   </script>
 </html>

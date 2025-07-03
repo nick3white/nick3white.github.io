@@ -180,6 +180,12 @@ header .h1 span {
 .scroller:first-child {
   margin-inline: 2rem;
 }
+#header:not(.scrolled) :is(.tagline, .scroller) {
+  opacity: 0.9999;
+}
+#header.scrolled :is(.tagline, .scroller) {
+  opacity: 0.0001;
+}
 .themer {
   background: var(--bg-color);
 }

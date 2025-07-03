@@ -67,6 +67,12 @@ class ThemeSelector extends HTMLElement {
               width: 100%;
               background-color: var(--color);
             }
+            @media screen and (max-width: 1000px){
+              .theme-btn:nth-child(odd) {
+                display: none;
+              }
+            }
+
         `;
     this.shadowRoot.appendChild(style);
   }
